@@ -464,6 +464,7 @@ void main() {
               scrollable: find.byType(Scrollable).first,
             );
             await tester.ensureVisible(find.byType(ListTile));
+            await tester.pumpAndSettle();
             await tester.tap(find.byType(ListTile));
             await tester.pumpAndSettle();
             await tester.scrollUntilVisible(
@@ -481,8 +482,17 @@ void main() {
               find.byTooltip(es.addFavorite(name)),
             );
             expect(title.right, lessThanOrEqualTo(favorite.left));
+            expect(
+              tester.widget<ListTile>(find.byType(ListTile)).selected,
+              isTrue,
+            );
             expect(tester.takeException(), isNull);
-            await tester.ensureVisible(find.byType(TextField));
+            await tester.scrollUntilVisible(
+              find.byType(TextField),
+              -150,
+              scrollable: find.byType(Scrollable).first,
+            );
+            await tester.pumpAndSettle();
           }
           await language(tester, 'English');
           expect(tester.takeException(), isNull);

@@ -225,7 +225,14 @@ void main() {
                 : find.byTooltip('Add $name to favorites'),
           );
           expect(title.right, lessThanOrEqualTo(favorite.left));
-          await tester.ensureVisible(find.byType(TextField));
+          // The lazy list can dispose the header after scrolling a tall row.
+          // Scroll it back into the tree before asking to interact with it.
+          await tester.scrollUntilVisible(
+            find.byType(TextField),
+            -150,
+            scrollable: find.byType(Scrollable).first,
+          );
+          await tester.pumpAndSettle();
         }
         if (width == 320 && scale == 2) {
           await screenshot(tester, 'small-phone-large-text');

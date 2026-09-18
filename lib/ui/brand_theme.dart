@@ -13,6 +13,7 @@ abstract final class BrandTokens {
   static const darkSurface = Color(0xFF1A2638);
   static const radius = 16.0;
   static const pagePadding = 20.0;
+  static const listTileHorizontalPadding = 16.0;
   static const touchTarget = 48.0;
 
   static ThemeData theme(Brightness brightness) {

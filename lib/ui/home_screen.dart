@@ -306,7 +306,10 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   ],
                                 ),
                                 ListTile(
-                                  contentPadding: EdgeInsets.zero,
+                                  contentPadding: const EdgeInsets.symmetric(
+                                    horizontal:
+                                        BrandTokens.listTileHorizontalPadding,
+                                  ),
                                   leading: Image.asset(
                                     quickItem.asset,
                                     width: 48,
@@ -416,6 +419,10 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                         row.section == 'Favorites' || row.section == 'Recent'
                             ? '${row.section}-${item.id}'
                             : item.id.toString(),
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: BrandTokens.listTileHorizontalPadding,
+                        vertical: 8,
                       ),
                       leading: Image.asset(
                         item.asset,

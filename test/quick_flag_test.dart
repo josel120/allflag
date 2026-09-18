@@ -10,6 +10,7 @@ import 'package:allflag/domain/flag_preferences.dart';
 import 'package:allflag/platform/flag_mode_platform.dart';
 import 'package:allflag/ui/flag_mode_controller.dart';
 import 'package:allflag/ui/flag_screen.dart';
+import 'package:allflag/ui/brand_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -190,6 +191,93 @@ void main() {
       expect(store.value.theme, ThemePreference.dark);
     },
   );
+
+  testWidgets('Quick Flag country row uses normal ListTile horizontal inset', (
+    tester,
+  ) async {
+    final store = MemoryPreferencesStore(
+      FlagPreferences(quickFlag: flagId('DE')),
+    );
+    await start(tester, store, RecordingFlagModePlatform());
+
+    final card = find.byKey(const ValueKey('quick-flag-card'));
+    final image = find.descendant(of: card, matching: find.byType(Image));
+    final cardRect = tester.getRect(card);
+    final imageRect = tester.getRect(image);
+
+    expect(
+      imageRect.left,
+      closeTo(cardRect.left + 16 + BrandTokens.listTileHorizontalPadding, 0.01),
+    );
+    expect(imageRect.width, 48);
+    expect(imageRect.height, 32);
+  });
+
+  for (final language in [
+    LanguagePreference.english,
+    LanguagePreference.spanish,
+  ]) {
+    for (final scale in [1.0, 2.0]) {
+      for (final theme in ThemePreference.values) {
+        testWidgets('narrow shortcuts ${language.name} $scale ${theme.name}', (
+          tester,
+        ) async {
+          final id = flagId('VC');
+          final store = MemoryPreferencesStore(
+            FlagPreferences(
+              quickFlag: id,
+              favorites: [id],
+              recent: [id],
+              language: language,
+              theme: theme,
+            ),
+          );
+          await start(tester, store, RecordingFlagModePlatform());
+          tester.view.physicalSize = const Size(320, 700);
+          tester.platformDispatcher.textScaleFactorTestValue = scale;
+          addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
+          await tester.pumpAndSettle();
+          final card = find.byKey(const ValueKey('quick-flag-card'));
+          final quickRow = find.descendant(
+            of: card,
+            matching: find.byType(ListTile),
+          );
+          final name = language == LanguagePreference.spanish
+              ? 'San Vicente y las Granadinas'
+              : 'Saint Vincent and the Grenadines';
+          for (final row in [
+            quickRow,
+            find.byKey(ValueKey('Favorites-$id')),
+            find.byKey(ValueKey('Recent-$id')),
+          ]) {
+            await tester.scrollUntilVisible(
+              row,
+              150,
+              scrollable: find.byType(Scrollable).first,
+            );
+            await tester.pumpAndSettle();
+            final bounds = tester.getRect(row);
+            final flag = tester.getRect(
+              find.descendant(of: row, matching: find.byType(Image)),
+            );
+            final title = tester.getRect(
+              find.descendant(of: row, matching: find.text(name)),
+            );
+            expect(flag.size, const Size(48, 32));
+            expect(flag.left - bounds.left, 16);
+            expect(title.left - flag.right, greaterThanOrEqualTo(12));
+            expect(title.right, lessThanOrEqualTo(bounds.right - 16));
+            expect(title.top, greaterThanOrEqualTo(bounds.top));
+            expect(title.bottom, lessThanOrEqualTo(bounds.bottom));
+            expect(tester.takeException(), isNull);
+          }
+          expect(store.value.quickFlag, id);
+          expect(store.value.favorites, {id});
+          expect(store.value.recent, [id]);
+        });
+      }
+    }
+  }
 
   for (final code in ['VE', 'US', 'CA', 'JP']) {
     testWidgets(
