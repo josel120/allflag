@@ -1,0 +1,26 @@
+﻿name: allflag
+description: Turn your phone into the flag you want to show right now.
+publish_to: 'none'
+version: 0.8.0+10
+environment:
+  sdk: ^3.13.2
+dependencies:
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  shared_preferences: ^2.5.5
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/branding/allflag-icon.png
+    - assets/flags/
+    - assets/data/countries.json
+    - docs/UNICODE_LICENSE.txt
+

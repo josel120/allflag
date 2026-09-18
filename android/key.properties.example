@@ -1,0 +1,9 @@
+# Copy to android/key.properties (ignored). Never commit real values.
+# Relative storeFile paths resolve from android/, not android/app/.
+# Fill blank password fields locally. Never share this private copy.
+# Save as UTF-8. Java properties escapes still apply; double literal backslashes.
+# Passwords are used exactly as parsed: do not add quote delimiters or spaces.
+storeFile=keystore/allflag-upload-key.jks
+storePassword=
+keyAlias=allflag-upload
+keyPassword=

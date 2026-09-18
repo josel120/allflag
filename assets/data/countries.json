@@ -1,0 +1,1952 @@
+[
+    {
+        "code":  "AF",
+        "name":  "Afghanistan",
+        "flag":  {
+                     "id":  "af-current",
+                     "name":  "Flag of Afghanistan",
+                     "asset":  "assets/flags/af.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AL",
+        "name":  "Albania",
+        "flag":  {
+                     "id":  "al-current",
+                     "name":  "Flag of Albania",
+                     "asset":  "assets/flags/al.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "DZ",
+        "name":  "Algeria",
+        "flag":  {
+                     "id":  "dz-current",
+                     "name":  "Flag of Algeria",
+                     "asset":  "assets/flags/dz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AD",
+        "name":  "Andorra",
+        "flag":  {
+                     "id":  "ad-current",
+                     "name":  "Flag of Andorra",
+                     "asset":  "assets/flags/ad.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AO",
+        "name":  "Angola",
+        "flag":  {
+                     "id":  "ao-current",
+                     "name":  "Flag of Angola",
+                     "asset":  "assets/flags/ao.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AG",
+        "name":  "Antigua and Barbuda",
+        "flag":  {
+                     "id":  "ag-current",
+                     "name":  "Flag of Antigua and Barbuda",
+                     "asset":  "assets/flags/ag.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AR",
+        "name":  "Argentina",
+        "flag":  {
+                     "id":  "ar-current",
+                     "name":  "Flag of Argentina",
+                     "asset":  "assets/flags/ar.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AM",
+        "name":  "Armenia",
+        "flag":  {
+                     "id":  "am-current",
+                     "name":  "Flag of Armenia",
+                     "asset":  "assets/flags/am.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AU",
+        "name":  "Australia",
+        "flag":  {
+                     "id":  "au-current",
+                     "name":  "Flag of Australia",
+                     "asset":  "assets/flags/au.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AT",
+        "name":  "Austria",
+        "flag":  {
+                     "id":  "at-current",
+                     "name":  "Flag of Austria",
+                     "asset":  "assets/flags/at.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AZ",
+        "name":  "Azerbaijan",
+        "flag":  {
+                     "id":  "az-current",
+                     "name":  "Flag of Azerbaijan",
+                     "asset":  "assets/flags/az.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BS",
+        "name":  "Bahamas",
+        "flag":  {
+                     "id":  "bs-current",
+                     "name":  "Flag of Bahamas",
+                     "asset":  "assets/flags/bs.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BH",
+        "name":  "Bahrain",
+        "flag":  {
+                     "id":  "bh-current",
+                     "name":  "Flag of Bahrain",
+                     "asset":  "assets/flags/bh.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BD",
+        "name":  "Bangladesh",
+        "flag":  {
+                     "id":  "bd-current",
+                     "name":  "Flag of Bangladesh",
+                     "asset":  "assets/flags/bd.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BB",
+        "name":  "Barbados",
+        "flag":  {
+                     "id":  "bb-current",
+                     "name":  "Flag of Barbados",
+                     "asset":  "assets/flags/bb.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BY",
+        "name":  "Belarus",
+        "flag":  {
+                     "id":  "by-current",
+                     "name":  "Flag of Belarus",
+                     "asset":  "assets/flags/by.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BE",
+        "name":  "Belgium",
+        "flag":  {
+                     "id":  "be-current",
+                     "name":  "Flag of Belgium",
+                     "asset":  "assets/flags/be.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BZ",
+        "name":  "Belize",
+        "flag":  {
+                     "id":  "bz-current",
+                     "name":  "Flag of Belize",
+                     "asset":  "assets/flags/bz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BJ",
+        "name":  "Benin",
+        "flag":  {
+                     "id":  "bj-current",
+                     "name":  "Flag of Benin",
+                     "asset":  "assets/flags/bj.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BT",
+        "name":  "Bhutan",
+        "flag":  {
+                     "id":  "bt-current",
+                     "name":  "Flag of Bhutan",
+                     "asset":  "assets/flags/bt.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BO",
+        "name":  "Bolivia",
+        "flag":  {
+                     "id":  "bo-current",
+                     "name":  "Flag of Bolivia",
+                     "asset":  "assets/flags/bo.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BA",
+        "name":  "Bosnia and Herzegovina",
+        "flag":  {
+                     "id":  "ba-current",
+                     "name":  "Flag of Bosnia and Herzegovina",
+                     "asset":  "assets/flags/ba.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BW",
+        "name":  "Botswana",
+        "flag":  {
+                     "id":  "bw-current",
+                     "name":  "Flag of Botswana",
+                     "asset":  "assets/flags/bw.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BR",
+        "name":  "Brazil",
+        "flag":  {
+                     "id":  "br-current",
+                     "name":  "Flag of Brazil",
+                     "asset":  "assets/flags/br.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BN",
+        "name":  "Brunei",
+        "flag":  {
+                     "id":  "bn-current",
+                     "name":  "Flag of Brunei",
+                     "asset":  "assets/flags/bn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BG",
+        "name":  "Bulgaria",
+        "flag":  {
+                     "id":  "bg-current",
+                     "name":  "Flag of Bulgaria",
+                     "asset":  "assets/flags/bg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BF",
+        "name":  "Burkina Faso",
+        "flag":  {
+                     "id":  "bf-current",
+                     "name":  "Flag of Burkina Faso",
+                     "asset":  "assets/flags/bf.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "BI",
+        "name":  "Burundi",
+        "flag":  {
+                     "id":  "bi-current",
+                     "name":  "Flag of Burundi",
+                     "asset":  "assets/flags/bi.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KH",
+        "name":  "Cambodia",
+        "flag":  {
+                     "id":  "kh-current",
+                     "name":  "Flag of Cambodia",
+                     "asset":  "assets/flags/kh.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CM",
+        "name":  "Cameroon",
+        "flag":  {
+                     "id":  "cm-current",
+                     "name":  "Flag of Cameroon",
+                     "asset":  "assets/flags/cm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CA",
+        "name":  "Canada",
+        "flag":  {
+                     "id":  "ca-current",
+                     "name":  "Flag of Canada",
+                     "asset":  "assets/flags/ca.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CV",
+        "name":  "Cape Verde",
+        "flag":  {
+                     "id":  "cv-current",
+                     "name":  "Flag of Cape Verde",
+                     "asset":  "assets/flags/cv.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CF",
+        "name":  "Central African Republic",
+        "flag":  {
+                     "id":  "cf-current",
+                     "name":  "Flag of Central African Republic",
+                     "asset":  "assets/flags/cf.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TD",
+        "name":  "Chad",
+        "flag":  {
+                     "id":  "td-current",
+                     "name":  "Flag of Chad",
+                     "asset":  "assets/flags/td.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CL",
+        "name":  "Chile",
+        "flag":  {
+                     "id":  "cl-current",
+                     "name":  "Flag of Chile",
+                     "asset":  "assets/flags/cl.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CN",
+        "name":  "China",
+        "flag":  {
+                     "id":  "cn-current",
+                     "name":  "Flag of China",
+                     "asset":  "assets/flags/cn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CO",
+        "name":  "Colombia",
+        "flag":  {
+                     "id":  "co-current",
+                     "name":  "Flag of Colombia",
+                     "asset":  "assets/flags/co.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KM",
+        "name":  "Comoros",
+        "flag":  {
+                     "id":  "km-current",
+                     "name":  "Flag of Comoros",
+                     "asset":  "assets/flags/km.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CR",
+        "name":  "Costa Rica",
+        "flag":  {
+                     "id":  "cr-current",
+                     "name":  "Flag of Costa Rica",
+                     "asset":  "assets/flags/cr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "HR",
+        "name":  "Croatia",
+        "flag":  {
+                     "id":  "hr-current",
+                     "name":  "Flag of Croatia",
+                     "asset":  "assets/flags/hr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CU",
+        "name":  "Cuba",
+        "flag":  {
+                     "id":  "cu-current",
+                     "name":  "Flag of Cuba",
+                     "asset":  "assets/flags/cu.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CY",
+        "name":  "Cyprus",
+        "flag":  {
+                     "id":  "cy-current",
+                     "name":  "Flag of Cyprus",
+                     "asset":  "assets/flags/cy.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CZ",
+        "name":  "Czechia",
+        "flag":  {
+                     "id":  "cz-current",
+                     "name":  "Flag of Czechia",
+                     "asset":  "assets/flags/cz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "DK",
+        "name":  "Denmark",
+        "flag":  {
+                     "id":  "dk-current",
+                     "name":  "Flag of Denmark",
+                     "asset":  "assets/flags/dk.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "DJ",
+        "name":  "Djibouti",
+        "flag":  {
+                     "id":  "dj-current",
+                     "name":  "Flag of Djibouti",
+                     "asset":  "assets/flags/dj.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "DM",
+        "name":  "Dominica",
+        "flag":  {
+                     "id":  "dm-current",
+                     "name":  "Flag of Dominica",
+                     "asset":  "assets/flags/dm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "DO",
+        "name":  "Dominican Republic",
+        "flag":  {
+                     "id":  "do-current",
+                     "name":  "Flag of Dominican Republic",
+                     "asset":  "assets/flags/do.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CD",
+        "name":  "DR Congo",
+        "flag":  {
+                     "id":  "cd-current",
+                     "name":  "Flag of DR Congo",
+                     "asset":  "assets/flags/cd.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "EC",
+        "name":  "Ecuador",
+        "flag":  {
+                     "id":  "ec-current",
+                     "name":  "Flag of Ecuador",
+                     "asset":  "assets/flags/ec.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "EG",
+        "name":  "Egypt",
+        "flag":  {
+                     "id":  "eg-current",
+                     "name":  "Flag of Egypt",
+                     "asset":  "assets/flags/eg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SV",
+        "name":  "El Salvador",
+        "flag":  {
+                     "id":  "sv-current",
+                     "name":  "Flag of El Salvador",
+                     "asset":  "assets/flags/sv.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GQ",
+        "name":  "Equatorial Guinea",
+        "flag":  {
+                     "id":  "gq-current",
+                     "name":  "Flag of Equatorial Guinea",
+                     "asset":  "assets/flags/gq.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ER",
+        "name":  "Eritrea",
+        "flag":  {
+                     "id":  "er-current",
+                     "name":  "Flag of Eritrea",
+                     "asset":  "assets/flags/er.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "EE",
+        "name":  "Estonia",
+        "flag":  {
+                     "id":  "ee-current",
+                     "name":  "Flag of Estonia",
+                     "asset":  "assets/flags/ee.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SZ",
+        "name":  "Eswatini",
+        "flag":  {
+                     "id":  "sz-current",
+                     "name":  "Flag of Eswatini",
+                     "asset":  "assets/flags/sz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ET",
+        "name":  "Ethiopia",
+        "flag":  {
+                     "id":  "et-current",
+                     "name":  "Flag of Ethiopia",
+                     "asset":  "assets/flags/et.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "FJ",
+        "name":  "Fiji",
+        "flag":  {
+                     "id":  "fj-current",
+                     "name":  "Flag of Fiji",
+                     "asset":  "assets/flags/fj.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "FI",
+        "name":  "Finland",
+        "flag":  {
+                     "id":  "fi-current",
+                     "name":  "Flag of Finland",
+                     "asset":  "assets/flags/fi.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "FR",
+        "name":  "France",
+        "flag":  {
+                     "id":  "fr-current",
+                     "name":  "Flag of France",
+                     "asset":  "assets/flags/fr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GA",
+        "name":  "Gabon",
+        "flag":  {
+                     "id":  "ga-current",
+                     "name":  "Flag of Gabon",
+                     "asset":  "assets/flags/ga.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GM",
+        "name":  "Gambia",
+        "flag":  {
+                     "id":  "gm-current",
+                     "name":  "Flag of Gambia",
+                     "asset":  "assets/flags/gm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GE",
+        "name":  "Georgia",
+        "flag":  {
+                     "id":  "ge-current",
+                     "name":  "Flag of Georgia",
+                     "asset":  "assets/flags/ge.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "DE",
+        "name":  "Germany",
+        "flag":  {
+                     "id":  "de-current",
+                     "name":  "Flag of Germany",
+                     "asset":  "assets/flags/de.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GH",
+        "name":  "Ghana",
+        "flag":  {
+                     "id":  "gh-current",
+                     "name":  "Flag of Ghana",
+                     "asset":  "assets/flags/gh.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GR",
+        "name":  "Greece",
+        "flag":  {
+                     "id":  "gr-current",
+                     "name":  "Flag of Greece",
+                     "asset":  "assets/flags/gr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GD",
+        "name":  "Grenada",
+        "flag":  {
+                     "id":  "gd-current",
+                     "name":  "Flag of Grenada",
+                     "asset":  "assets/flags/gd.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GT",
+        "name":  "Guatemala",
+        "flag":  {
+                     "id":  "gt-current",
+                     "name":  "Flag of Guatemala",
+                     "asset":  "assets/flags/gt.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GN",
+        "name":  "Guinea",
+        "flag":  {
+                     "id":  "gn-current",
+                     "name":  "Flag of Guinea",
+                     "asset":  "assets/flags/gn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GW",
+        "name":  "Guinea-Bissau",
+        "flag":  {
+                     "id":  "gw-current",
+                     "name":  "Flag of Guinea-Bissau",
+                     "asset":  "assets/flags/gw.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GY",
+        "name":  "Guyana",
+        "flag":  {
+                     "id":  "gy-current",
+                     "name":  "Flag of Guyana",
+                     "asset":  "assets/flags/gy.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "HT",
+        "name":  "Haiti",
+        "flag":  {
+                     "id":  "ht-current",
+                     "name":  "Flag of Haiti",
+                     "asset":  "assets/flags/ht.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "HN",
+        "name":  "Honduras",
+        "flag":  {
+                     "id":  "hn-current",
+                     "name":  "Flag of Honduras",
+                     "asset":  "assets/flags/hn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "HU",
+        "name":  "Hungary",
+        "flag":  {
+                     "id":  "hu-current",
+                     "name":  "Flag of Hungary",
+                     "asset":  "assets/flags/hu.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "IS",
+        "name":  "Iceland",
+        "flag":  {
+                     "id":  "is-current",
+                     "name":  "Flag of Iceland",
+                     "asset":  "assets/flags/is.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "IN",
+        "name":  "India",
+        "flag":  {
+                     "id":  "in-current",
+                     "name":  "Flag of India",
+                     "asset":  "assets/flags/in.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ID",
+        "name":  "Indonesia",
+        "flag":  {
+                     "id":  "id-current",
+                     "name":  "Flag of Indonesia",
+                     "asset":  "assets/flags/id.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "IR",
+        "name":  "Iran",
+        "flag":  {
+                     "id":  "ir-current",
+                     "name":  "Flag of Iran",
+                     "asset":  "assets/flags/ir.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "IQ",
+        "name":  "Iraq",
+        "flag":  {
+                     "id":  "iq-current",
+                     "name":  "Flag of Iraq",
+                     "asset":  "assets/flags/iq.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "IE",
+        "name":  "Ireland",
+        "flag":  {
+                     "id":  "ie-current",
+                     "name":  "Flag of Ireland",
+                     "asset":  "assets/flags/ie.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "IL",
+        "name":  "Israel",
+        "flag":  {
+                     "id":  "il-current",
+                     "name":  "Flag of Israel",
+                     "asset":  "assets/flags/il.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "IT",
+        "name":  "Italy",
+        "flag":  {
+                     "id":  "it-current",
+                     "name":  "Flag of Italy",
+                     "asset":  "assets/flags/it.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CI",
+        "name":  "Ivory Coast",
+        "flag":  {
+                     "id":  "ci-current",
+                     "name":  "Flag of Ivory Coast",
+                     "asset":  "assets/flags/ci.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "JM",
+        "name":  "Jamaica",
+        "flag":  {
+                     "id":  "jm-current",
+                     "name":  "Flag of Jamaica",
+                     "asset":  "assets/flags/jm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "JP",
+        "name":  "Japan",
+        "flag":  {
+                     "id":  "jp-1999",
+                     "name":  "Flag of Japan",
+                     "asset":  "assets/flags/jp.png",
+                     "startYear":  1999
+                 }
+    },
+    {
+        "code":  "JO",
+        "name":  "Jordan",
+        "flag":  {
+                     "id":  "jo-current",
+                     "name":  "Flag of Jordan",
+                     "asset":  "assets/flags/jo.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KZ",
+        "name":  "Kazakhstan",
+        "flag":  {
+                     "id":  "kz-current",
+                     "name":  "Flag of Kazakhstan",
+                     "asset":  "assets/flags/kz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KE",
+        "name":  "Kenya",
+        "flag":  {
+                     "id":  "ke-current",
+                     "name":  "Flag of Kenya",
+                     "asset":  "assets/flags/ke.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KI",
+        "name":  "Kiribati",
+        "flag":  {
+                     "id":  "ki-current",
+                     "name":  "Flag of Kiribati",
+                     "asset":  "assets/flags/ki.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KW",
+        "name":  "Kuwait",
+        "flag":  {
+                     "id":  "kw-current",
+                     "name":  "Flag of Kuwait",
+                     "asset":  "assets/flags/kw.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KG",
+        "name":  "Kyrgyzstan",
+        "flag":  {
+                     "id":  "kg-current",
+                     "name":  "Flag of Kyrgyzstan",
+                     "asset":  "assets/flags/kg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LA",
+        "name":  "Laos",
+        "flag":  {
+                     "id":  "la-current",
+                     "name":  "Flag of Laos",
+                     "asset":  "assets/flags/la.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LV",
+        "name":  "Latvia",
+        "flag":  {
+                     "id":  "lv-current",
+                     "name":  "Flag of Latvia",
+                     "asset":  "assets/flags/lv.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LB",
+        "name":  "Lebanon",
+        "flag":  {
+                     "id":  "lb-current",
+                     "name":  "Flag of Lebanon",
+                     "asset":  "assets/flags/lb.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LS",
+        "name":  "Lesotho",
+        "flag":  {
+                     "id":  "ls-current",
+                     "name":  "Flag of Lesotho",
+                     "asset":  "assets/flags/ls.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LR",
+        "name":  "Liberia",
+        "flag":  {
+                     "id":  "lr-current",
+                     "name":  "Flag of Liberia",
+                     "asset":  "assets/flags/lr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LY",
+        "name":  "Libya",
+        "flag":  {
+                     "id":  "ly-current",
+                     "name":  "Flag of Libya",
+                     "asset":  "assets/flags/ly.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LI",
+        "name":  "Liechtenstein",
+        "flag":  {
+                     "id":  "li-current",
+                     "name":  "Flag of Liechtenstein",
+                     "asset":  "assets/flags/li.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LT",
+        "name":  "Lithuania",
+        "flag":  {
+                     "id":  "lt-current",
+                     "name":  "Flag of Lithuania",
+                     "asset":  "assets/flags/lt.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LU",
+        "name":  "Luxembourg",
+        "flag":  {
+                     "id":  "lu-current",
+                     "name":  "Flag of Luxembourg",
+                     "asset":  "assets/flags/lu.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MG",
+        "name":  "Madagascar",
+        "flag":  {
+                     "id":  "mg-current",
+                     "name":  "Flag of Madagascar",
+                     "asset":  "assets/flags/mg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MW",
+        "name":  "Malawi",
+        "flag":  {
+                     "id":  "mw-current",
+                     "name":  "Flag of Malawi",
+                     "asset":  "assets/flags/mw.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MY",
+        "name":  "Malaysia",
+        "flag":  {
+                     "id":  "my-current",
+                     "name":  "Flag of Malaysia",
+                     "asset":  "assets/flags/my.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MV",
+        "name":  "Maldives",
+        "flag":  {
+                     "id":  "mv-current",
+                     "name":  "Flag of Maldives",
+                     "asset":  "assets/flags/mv.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ML",
+        "name":  "Mali",
+        "flag":  {
+                     "id":  "ml-current",
+                     "name":  "Flag of Mali",
+                     "asset":  "assets/flags/ml.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MT",
+        "name":  "Malta",
+        "flag":  {
+                     "id":  "mt-current",
+                     "name":  "Flag of Malta",
+                     "asset":  "assets/flags/mt.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MH",
+        "name":  "Marshall Islands",
+        "flag":  {
+                     "id":  "mh-current",
+                     "name":  "Flag of Marshall Islands",
+                     "asset":  "assets/flags/mh.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MR",
+        "name":  "Mauritania",
+        "flag":  {
+                     "id":  "mr-current",
+                     "name":  "Flag of Mauritania",
+                     "asset":  "assets/flags/mr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MU",
+        "name":  "Mauritius",
+        "flag":  {
+                     "id":  "mu-current",
+                     "name":  "Flag of Mauritius",
+                     "asset":  "assets/flags/mu.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MX",
+        "name":  "Mexico",
+        "flag":  {
+                     "id":  "mx-current",
+                     "name":  "Flag of Mexico",
+                     "asset":  "assets/flags/mx.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "FM",
+        "name":  "Micronesia",
+        "flag":  {
+                     "id":  "fm-current",
+                     "name":  "Flag of Micronesia",
+                     "asset":  "assets/flags/fm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MD",
+        "name":  "Moldova",
+        "flag":  {
+                     "id":  "md-current",
+                     "name":  "Flag of Moldova",
+                     "asset":  "assets/flags/md.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MC",
+        "name":  "Monaco",
+        "flag":  {
+                     "id":  "mc-current",
+                     "name":  "Flag of Monaco",
+                     "asset":  "assets/flags/mc.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MN",
+        "name":  "Mongolia",
+        "flag":  {
+                     "id":  "mn-current",
+                     "name":  "Flag of Mongolia",
+                     "asset":  "assets/flags/mn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ME",
+        "name":  "Montenegro",
+        "flag":  {
+                     "id":  "me-current",
+                     "name":  "Flag of Montenegro",
+                     "asset":  "assets/flags/me.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MA",
+        "name":  "Morocco",
+        "flag":  {
+                     "id":  "ma-current",
+                     "name":  "Flag of Morocco",
+                     "asset":  "assets/flags/ma.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MZ",
+        "name":  "Mozambique",
+        "flag":  {
+                     "id":  "mz-current",
+                     "name":  "Flag of Mozambique",
+                     "asset":  "assets/flags/mz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MM",
+        "name":  "Myanmar",
+        "flag":  {
+                     "id":  "mm-current",
+                     "name":  "Flag of Myanmar",
+                     "asset":  "assets/flags/mm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NA",
+        "name":  "Namibia",
+        "flag":  {
+                     "id":  "na-current",
+                     "name":  "Flag of Namibia",
+                     "asset":  "assets/flags/na.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NR",
+        "name":  "Nauru",
+        "flag":  {
+                     "id":  "nr-current",
+                     "name":  "Flag of Nauru",
+                     "asset":  "assets/flags/nr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NP",
+        "name":  "Nepal",
+        "flag":  {
+                     "id":  "np-current",
+                     "name":  "Flag of Nepal",
+                     "asset":  "assets/flags/np.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NL",
+        "name":  "Netherlands",
+        "flag":  {
+                     "id":  "nl-current",
+                     "name":  "Flag of Netherlands",
+                     "asset":  "assets/flags/nl.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NZ",
+        "name":  "New Zealand",
+        "flag":  {
+                     "id":  "nz-current",
+                     "name":  "Flag of New Zealand",
+                     "asset":  "assets/flags/nz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NI",
+        "name":  "Nicaragua",
+        "flag":  {
+                     "id":  "ni-current",
+                     "name":  "Flag of Nicaragua",
+                     "asset":  "assets/flags/ni.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NE",
+        "name":  "Niger",
+        "flag":  {
+                     "id":  "ne-current",
+                     "name":  "Flag of Niger",
+                     "asset":  "assets/flags/ne.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NG",
+        "name":  "Nigeria",
+        "flag":  {
+                     "id":  "ng-current",
+                     "name":  "Flag of Nigeria",
+                     "asset":  "assets/flags/ng.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KP",
+        "name":  "North Korea",
+        "flag":  {
+                     "id":  "kp-current",
+                     "name":  "Flag of North Korea",
+                     "asset":  "assets/flags/kp.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "MK",
+        "name":  "North Macedonia",
+        "flag":  {
+                     "id":  "mk-current",
+                     "name":  "Flag of North Macedonia",
+                     "asset":  "assets/flags/mk.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "NO",
+        "name":  "Norway",
+        "flag":  {
+                     "id":  "no-current",
+                     "name":  "Flag of Norway",
+                     "asset":  "assets/flags/no.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "OM",
+        "name":  "Oman",
+        "flag":  {
+                     "id":  "om-current",
+                     "name":  "Flag of Oman",
+                     "asset":  "assets/flags/om.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PK",
+        "name":  "Pakistan",
+        "flag":  {
+                     "id":  "pk-current",
+                     "name":  "Flag of Pakistan",
+                     "asset":  "assets/flags/pk.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PW",
+        "name":  "Palau",
+        "flag":  {
+                     "id":  "pw-current",
+                     "name":  "Flag of Palau",
+                     "asset":  "assets/flags/pw.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PS",
+        "name":  "Palestine",
+        "flag":  {
+                     "id":  "ps-current",
+                     "name":  "Flag of Palestine",
+                     "asset":  "assets/flags/ps.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PA",
+        "name":  "Panama",
+        "flag":  {
+                     "id":  "pa-current",
+                     "name":  "Flag of Panama",
+                     "asset":  "assets/flags/pa.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PG",
+        "name":  "Papua New Guinea",
+        "flag":  {
+                     "id":  "pg-current",
+                     "name":  "Flag of Papua New Guinea",
+                     "asset":  "assets/flags/pg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PY",
+        "name":  "Paraguay",
+        "flag":  {
+                     "id":  "py-current",
+                     "name":  "Flag of Paraguay",
+                     "asset":  "assets/flags/py.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PE",
+        "name":  "Peru",
+        "flag":  {
+                     "id":  "pe-1950",
+                     "name":  "Flag of Peru",
+                     "asset":  "assets/flags/pe.png",
+                     "startYear":  1950
+                 }
+    },
+    {
+        "code":  "PH",
+        "name":  "Philippines",
+        "flag":  {
+                     "id":  "ph-current",
+                     "name":  "Flag of Philippines",
+                     "asset":  "assets/flags/ph.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PL",
+        "name":  "Poland",
+        "flag":  {
+                     "id":  "pl-current",
+                     "name":  "Flag of Poland",
+                     "asset":  "assets/flags/pl.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "PT",
+        "name":  "Portugal",
+        "flag":  {
+                     "id":  "pt-current",
+                     "name":  "Flag of Portugal",
+                     "asset":  "assets/flags/pt.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "QA",
+        "name":  "Qatar",
+        "flag":  {
+                     "id":  "qa-current",
+                     "name":  "Flag of Qatar",
+                     "asset":  "assets/flags/qa.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CG",
+        "name":  "Republic of the Congo",
+        "flag":  {
+                     "id":  "cg-current",
+                     "name":  "Flag of Republic of the Congo",
+                     "asset":  "assets/flags/cg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "RO",
+        "name":  "Romania",
+        "flag":  {
+                     "id":  "ro-current",
+                     "name":  "Flag of Romania",
+                     "asset":  "assets/flags/ro.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "RU",
+        "name":  "Russia",
+        "flag":  {
+                     "id":  "ru-current",
+                     "name":  "Flag of Russia",
+                     "asset":  "assets/flags/ru.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "RW",
+        "name":  "Rwanda",
+        "flag":  {
+                     "id":  "rw-current",
+                     "name":  "Flag of Rwanda",
+                     "asset":  "assets/flags/rw.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KN",
+        "name":  "Saint Kitts and Nevis",
+        "flag":  {
+                     "id":  "kn-current",
+                     "name":  "Flag of Saint Kitts and Nevis",
+                     "asset":  "assets/flags/kn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "LC",
+        "name":  "Saint Lucia",
+        "flag":  {
+                     "id":  "lc-current",
+                     "name":  "Flag of Saint Lucia",
+                     "asset":  "assets/flags/lc.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "VC",
+        "name":  "Saint Vincent and the Grenadines",
+        "flag":  {
+                     "id":  "vc-current",
+                     "name":  "Flag of Saint Vincent and the Grenadines",
+                     "asset":  "assets/flags/vc.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "WS",
+        "name":  "Samoa",
+        "flag":  {
+                     "id":  "ws-current",
+                     "name":  "Flag of Samoa",
+                     "asset":  "assets/flags/ws.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SM",
+        "name":  "San Marino",
+        "flag":  {
+                     "id":  "sm-current",
+                     "name":  "Flag of San Marino",
+                     "asset":  "assets/flags/sm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ST",
+        "name":  "Sao Tome and Principe",
+        "flag":  {
+                     "id":  "st-current",
+                     "name":  "Flag of Sao Tome and Principe",
+                     "asset":  "assets/flags/st.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SA",
+        "name":  "Saudi Arabia",
+        "flag":  {
+                     "id":  "sa-current",
+                     "name":  "Flag of Saudi Arabia",
+                     "asset":  "assets/flags/sa.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SN",
+        "name":  "Senegal",
+        "flag":  {
+                     "id":  "sn-current",
+                     "name":  "Flag of Senegal",
+                     "asset":  "assets/flags/sn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "RS",
+        "name":  "Serbia",
+        "flag":  {
+                     "id":  "rs-current",
+                     "name":  "Flag of Serbia",
+                     "asset":  "assets/flags/rs.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SC",
+        "name":  "Seychelles",
+        "flag":  {
+                     "id":  "sc-current",
+                     "name":  "Flag of Seychelles",
+                     "asset":  "assets/flags/sc.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SL",
+        "name":  "Sierra Leone",
+        "flag":  {
+                     "id":  "sl-current",
+                     "name":  "Flag of Sierra Leone",
+                     "asset":  "assets/flags/sl.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SG",
+        "name":  "Singapore",
+        "flag":  {
+                     "id":  "sg-current",
+                     "name":  "Flag of Singapore",
+                     "asset":  "assets/flags/sg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SK",
+        "name":  "Slovakia",
+        "flag":  {
+                     "id":  "sk-current",
+                     "name":  "Flag of Slovakia",
+                     "asset":  "assets/flags/sk.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SI",
+        "name":  "Slovenia",
+        "flag":  {
+                     "id":  "si-current",
+                     "name":  "Flag of Slovenia",
+                     "asset":  "assets/flags/si.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SB",
+        "name":  "Solomon Islands",
+        "flag":  {
+                     "id":  "sb-current",
+                     "name":  "Flag of Solomon Islands",
+                     "asset":  "assets/flags/sb.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SO",
+        "name":  "Somalia",
+        "flag":  {
+                     "id":  "so-current",
+                     "name":  "Flag of Somalia",
+                     "asset":  "assets/flags/so.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ZA",
+        "name":  "South Africa",
+        "flag":  {
+                     "id":  "za-current",
+                     "name":  "Flag of South Africa",
+                     "asset":  "assets/flags/za.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "KR",
+        "name":  "South Korea",
+        "flag":  {
+                     "id":  "kr-current",
+                     "name":  "Flag of South Korea",
+                     "asset":  "assets/flags/kr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SS",
+        "name":  "South Sudan",
+        "flag":  {
+                     "id":  "ss-current",
+                     "name":  "Flag of South Sudan",
+                     "asset":  "assets/flags/ss.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ES",
+        "name":  "Spain",
+        "flag":  {
+                     "id":  "es-1981",
+                     "name":  "Flag of Spain",
+                     "asset":  "assets/flags/es.png",
+                     "startYear":  1981
+                 }
+    },
+    {
+        "code":  "LK",
+        "name":  "Sri Lanka",
+        "flag":  {
+                     "id":  "lk-current",
+                     "name":  "Flag of Sri Lanka",
+                     "asset":  "assets/flags/lk.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SD",
+        "name":  "Sudan",
+        "flag":  {
+                     "id":  "sd-current",
+                     "name":  "Flag of Sudan",
+                     "asset":  "assets/flags/sd.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SR",
+        "name":  "Suriname",
+        "flag":  {
+                     "id":  "sr-current",
+                     "name":  "Flag of Suriname",
+                     "asset":  "assets/flags/sr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SE",
+        "name":  "Sweden",
+        "flag":  {
+                     "id":  "se-current",
+                     "name":  "Flag of Sweden",
+                     "asset":  "assets/flags/se.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "CH",
+        "name":  "Switzerland",
+        "flag":  {
+                     "id":  "ch-current",
+                     "name":  "Flag of Switzerland",
+                     "asset":  "assets/flags/ch.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "SY",
+        "name":  "Syria",
+        "flag":  {
+                     "id":  "sy-current",
+                     "name":  "Flag of Syria",
+                     "asset":  "assets/flags/sy.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TJ",
+        "name":  "Tajikistan",
+        "flag":  {
+                     "id":  "tj-current",
+                     "name":  "Flag of Tajikistan",
+                     "asset":  "assets/flags/tj.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TZ",
+        "name":  "Tanzania",
+        "flag":  {
+                     "id":  "tz-current",
+                     "name":  "Flag of Tanzania",
+                     "asset":  "assets/flags/tz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TH",
+        "name":  "Thailand",
+        "flag":  {
+                     "id":  "th-current",
+                     "name":  "Flag of Thailand",
+                     "asset":  "assets/flags/th.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TL",
+        "name":  "Timor-Leste",
+        "flag":  {
+                     "id":  "tl-current",
+                     "name":  "Flag of Timor-Leste",
+                     "asset":  "assets/flags/tl.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TG",
+        "name":  "Togo",
+        "flag":  {
+                     "id":  "tg-current",
+                     "name":  "Flag of Togo",
+                     "asset":  "assets/flags/tg.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TO",
+        "name":  "Tonga",
+        "flag":  {
+                     "id":  "to-current",
+                     "name":  "Flag of Tonga",
+                     "asset":  "assets/flags/to.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TT",
+        "name":  "Trinidad and Tobago",
+        "flag":  {
+                     "id":  "tt-current",
+                     "name":  "Flag of Trinidad and Tobago",
+                     "asset":  "assets/flags/tt.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TN",
+        "name":  "Tunisia",
+        "flag":  {
+                     "id":  "tn-current",
+                     "name":  "Flag of Tunisia",
+                     "asset":  "assets/flags/tn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TR",
+        "name":  "Turkey",
+        "flag":  {
+                     "id":  "tr-current",
+                     "name":  "Flag of Turkey",
+                     "asset":  "assets/flags/tr.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TM",
+        "name":  "Turkmenistan",
+        "flag":  {
+                     "id":  "tm-current",
+                     "name":  "Flag of Turkmenistan",
+                     "asset":  "assets/flags/tm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "TV",
+        "name":  "Tuvalu",
+        "flag":  {
+                     "id":  "tv-current",
+                     "name":  "Flag of Tuvalu",
+                     "asset":  "assets/flags/tv.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "UG",
+        "name":  "Uganda",
+        "flag":  {
+                     "id":  "ug-current",
+                     "name":  "Flag of Uganda",
+                     "asset":  "assets/flags/ug.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "UA",
+        "name":  "Ukraine",
+        "flag":  {
+                     "id":  "ua-current",
+                     "name":  "Flag of Ukraine",
+                     "asset":  "assets/flags/ua.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "AE",
+        "name":  "United Arab Emirates",
+        "flag":  {
+                     "id":  "ae-current",
+                     "name":  "Flag of United Arab Emirates",
+                     "asset":  "assets/flags/ae.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "GB",
+        "name":  "United Kingdom",
+        "flag":  {
+                     "id":  "gb-current",
+                     "name":  "Flag of United Kingdom",
+                     "asset":  "assets/flags/gb.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "US",
+        "name":  "United States",
+        "flag":  {
+                     "id":  "us-1960",
+                     "name":  "Flag of United States",
+                     "asset":  "assets/flags/us.png",
+                     "startYear":  1960
+                 }
+    },
+    {
+        "code":  "UY",
+        "name":  "Uruguay",
+        "flag":  {
+                     "id":  "uy-current",
+                     "name":  "Flag of Uruguay",
+                     "asset":  "assets/flags/uy.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "UZ",
+        "name":  "Uzbekistan",
+        "flag":  {
+                     "id":  "uz-current",
+                     "name":  "Flag of Uzbekistan",
+                     "asset":  "assets/flags/uz.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "VU",
+        "name":  "Vanuatu",
+        "flag":  {
+                     "id":  "vu-current",
+                     "name":  "Flag of Vanuatu",
+                     "asset":  "assets/flags/vu.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "VA",
+        "name":  "Vatican City",
+        "flag":  {
+                     "id":  "va-current",
+                     "name":  "Flag of Vatican City",
+                     "asset":  "assets/flags/va.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "VE",
+        "name":  "Venezuela",
+        "flag":  {
+                     "id":  "ve-2006",
+                     "name":  "Flag of Venezuela",
+                     "asset":  "assets/flags/ve.png",
+                     "startYear":  2006
+                 }
+    },
+    {
+        "code":  "VN",
+        "name":  "Vietnam",
+        "flag":  {
+                     "id":  "vn-current",
+                     "name":  "Flag of Vietnam",
+                     "asset":  "assets/flags/vn.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "YE",
+        "name":  "Yemen",
+        "flag":  {
+                     "id":  "ye-current",
+                     "name":  "Flag of Yemen",
+                     "asset":  "assets/flags/ye.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ZM",
+        "name":  "Zambia",
+        "flag":  {
+                     "id":  "zm-current",
+                     "name":  "Flag of Zambia",
+                     "asset":  "assets/flags/zm.png",
+                     "startYear":  null
+                 }
+    },
+    {
+        "code":  "ZW",
+        "name":  "Zimbabwe",
+        "flag":  {
+                     "id":  "zw-current",
+                     "name":  "Flag of Zimbabwe",
+                     "asset":  "assets/flags/zw.png",
+                     "startYear":  null
+                 }
+    }
+]
