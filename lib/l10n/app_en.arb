@@ -12,6 +12,8 @@
     "system":  "System",
     "light":  "Light",
     "dark":  "Dark",
+    "switchToDarkMode": "Switch to dark mode",
+    "switchToLightMode": "Switch to light mode",
     "theme":  "Theme",
     "language":  "Language",
     "english":  "English",
@@ -65,6 +67,8 @@
                                           },
                          "description":  "Bundled ISO alpha-2 display names. Keep every catalog code in every locale."
                      },
+    "quickFlagHint": "Use a country's menu to set a Quick Flag.",
+    "quickFlagUnavailable": "Flag unavailable. Tap to show the exit button, then close Flag Mode.",
     "quickFlag":  "Quick Flag",
     "revealFlagControls":  "Show exit control",
     "countryActions":  "Actions for {country}",

@@ -40,12 +40,12 @@ class FlagModeController {
         try {
           await _platform.setLandscapeRequested(landscape);
         } catch (error) {
-          // Orientation is best-effort; the same flag remains usable by rotation.
+          // Orientation is best-effort; explicit presentation also works in portrait.
           debugPrint('Flag Mode orientation request failed: $error');
         }
       }
       try {
-        await _platform.setActive(active);
+        await _platform.setActive(active, programmatic: landscape);
       } catch (error, stack) {
         // A partially applied enable must never leave the screen awake.
         // A later lifecycle/rotation transition can retry; do not spin on rebuilds.

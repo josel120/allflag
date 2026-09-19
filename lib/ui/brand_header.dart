@@ -21,23 +21,34 @@ class BrandHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final controls = [
-      _PreferenceMenu<ThemePreference>(
-        tooltip: l10n.theme,
-        icon: Icons.brightness_6_outlined,
-        selected: theme,
-        values: ThemePreference.values,
-        onSelected: onThemeChanged,
-        label: (value) => switch (value) {
-          ThemePreference.system => l10n.system,
-          ThemePreference.light => l10n.light,
-          ThemePreference.dark => l10n.dark,
-        },
+      IconButton(
+        key: const ValueKey('appearance-toggle'),
+        tooltip: theme == ThemePreference.dark
+            ? l10n.switchToLightMode
+            : l10n.switchToDarkMode,
+        constraints: const BoxConstraints(minWidth: 48, minHeight: 48),
+        icon: Icon(
+          theme == ThemePreference.dark
+              ? Icons.light_mode_outlined
+              : Icons.dark_mode_outlined,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
+          semanticLabel: theme == ThemePreference.dark
+              ? l10n.switchToLightMode
+              : l10n.switchToDarkMode,
+        ),
+        onPressed: onThemeChanged == null
+            ? null
+            : () => onThemeChanged!(
+                theme == ThemePreference.dark
+                    ? ThemePreference.light
+                    : ThemePreference.dark,
+              ),
       ),
       _PreferenceMenu<LanguagePreference>(
         tooltip: l10n.language,
         icon: Icons.language,
         selected: language,
-        values: LanguagePreference.values,
+        values: const [LanguagePreference.english, LanguagePreference.spanish],
         onSelected: onLanguageChanged,
         label: (value) => switch (value) {
           LanguagePreference.system => l10n.system,
@@ -47,6 +58,7 @@ class BrandHeader extends StatelessWidget {
       ),
     ];
     return Semantics(
+      container: true,
       header: true,
       child: Row(
         children: [

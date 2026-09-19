@@ -11,6 +11,7 @@ import io.flutter.plugin.common.MethodChannel
 
 class MainActivity : FlutterActivity() {
     private var flagModeRequested = false
+    private var programmatic = false
     private var foreground = false
     private var applied: Boolean? = null
     private var flagModeChannel: MethodChannel? = null
@@ -22,7 +23,7 @@ class MainActivity : FlutterActivity() {
             "com.allflag.allflag/flag_mode"
         ).also { channel ->
             channel.setMethodCallHandler { call, result ->
-                if (call.method != "setFlagMode") {
+                if (call.method != "setFlagMode" && call.method != "setQuickFlagMode") {
                     result.notImplemented()
                 } else {
                     val active = call.arguments as? Boolean
@@ -30,6 +31,7 @@ class MainActivity : FlutterActivity() {
                         result.error("invalid_argument", "Expected a boolean", null)
                     } else {
                         flagModeRequested = active
+                        programmatic = active && call.method == "setQuickFlagMode"
                         applyFlagMode()
                         result.success(null)
                     }
@@ -39,9 +41,9 @@ class MainActivity : FlutterActivity() {
     }
 
     private fun applyFlagMode(force: Boolean = false) {
-        // Guard against late Dart messages while paused or rotating out of landscape.
+        // Explicit sessions allow portrait fallback; rotation sessions still require landscape.
         val active = flagModeRequested && foreground && hasWindowFocus() &&
-            resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
+            (programmatic || resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
         if (!force && applied == active) return
         val insets = WindowCompat.getInsetsController(window, window.decorView)
         if (active) {

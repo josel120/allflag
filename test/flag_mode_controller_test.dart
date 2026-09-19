@@ -13,12 +13,12 @@ class DelayedPlatform extends RecordingFlagModePlatform {
   final finish = Completer<void>();
 
   @override
-  Future<void> setActive(bool active) async {
+  Future<void> setActive(bool active, {bool programmatic = false}) async {
     if (active) {
       started.complete();
       await finish.future;
     }
-    await super.setActive(active);
+    await super.setActive(active, programmatic: programmatic);
   }
 }
 
@@ -26,8 +26,8 @@ class FailingPlatform extends RecordingFlagModePlatform {
   bool fail = true;
 
   @override
-  Future<void> setActive(bool active) async {
-    await super.setActive(active);
+  Future<void> setActive(bool active, {bool programmatic = false}) async {
+    await super.setActive(active, programmatic: programmatic);
     if (active && fail) {
       fail = false;
       throw PlatformException(code: 'unavailable');

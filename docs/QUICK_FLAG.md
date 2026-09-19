@@ -1,9 +1,15 @@
 # Quick Flag — AllFlag 0.7.0+9
 
+> v0.9 current behavior: explicit Quick Flag permits Android portrait fallback with
+> immersive/awake requests, localized exit recovery and a Home discovery hint.
+> See [release readiness](RELEASE_READINESS_v0.9.md). Physical-rotation mode retains
+> its landscape guard; historical no-button/no-orientation-request statements below
+> apply to ordinary rotation sessions only.
+
 > v0.8 update: core features now use FlagItem/FlagId and FlagPreferences.
 > Country-only persistence details below describe the original release; see
-> [Generic Flag Catalog and migration](GENERIC_FLAG_CATALOG.md) for the current schema.
-> User-facing behavior and device QA expectations remain unchanged.
+> [Generic Flag Catalog and migration](FLAG_CATALOG_ARCHITECTURE.md) for the current schema.
+> Historical release details follow; current changes and QA are linked above.
 
 ## Purpose and choices
 
@@ -102,7 +108,7 @@ application ID, keystore, key.properties or release configuration changes.
 
 All actions, readiness text, exit controls and semantic labels are English/Spanish
 ARB resources. Country names are resolved from the active locale on every build:
-DE remains DE when Germany becomes Alemania. System/Light/Dark use existing
+DE remains DE when Germany becomes Alemania. Light/Dark use existing
 BrandTokens and Material theme colors; flags remain the main color element.
 No runtime dependencies were added or removed.
 
@@ -130,7 +136,7 @@ OS gesture, native sleep or iOS build behavior.
 - [ ] Replace with another of the four countries; only one card remains.
 - [ ] Remove via both country and card menus; restart with no card.
 - [ ] English/Spanish: actions, semantic labels and translated country names.
-- [ ] Light/Dark/System; change settings and verify Quick Flag identity.
+- [ ] Light/Dark; change settings and verify Quick Flag identity.
 - [ ] Small display, large text, TalkBack/VoiceOver, focus and touch targets.
 - [ ] A: Select a normal country and physically rotate; verify the unchanged
       control-free mode and rotate-back exit, including after Quick Flag use.

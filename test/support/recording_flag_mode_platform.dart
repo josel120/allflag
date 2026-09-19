@@ -14,7 +14,7 @@ class RecordingFlagModePlatform implements FlagModePlatform {
   }
 
   @override
-  Future<void> setActive(bool active) async {
+  Future<void> setActive(bool active, {bool programmatic = false}) async {
     calls.add(active);
     awake = active;
     immersive = active;

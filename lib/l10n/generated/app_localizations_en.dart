@@ -47,6 +47,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dark => 'Dark';
 
   @override
+  String get switchToDarkMode => 'Switch to dark mode';
+
+  @override
+  String get switchToLightMode => 'Switch to light mode';
+
+  @override
   String get theme => 'Theme';
 
   @override
@@ -305,6 +311,13 @@ class AppLocalizationsEn extends AppLocalizations {
     });
     return '$_temp0';
   }
+
+  @override
+  String get quickFlagHint => 'Use a country\'s menu to set a Quick Flag.';
+
+  @override
+  String get quickFlagUnavailable =>
+      'Flag unavailable. Tap to show the exit button, then close Flag Mode.';
 
   @override
   String get quickFlag => 'Quick Flag';

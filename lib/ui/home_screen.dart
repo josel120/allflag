@@ -53,6 +53,27 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       availableIds: items.map((item) => item.id).toSet(),
     );
     _preferences = saved.validFor(items.map((item) => item.id).toSet());
+    if (!mounted) return items;
+    // System is a legacy/uninitialized sentinel, resolved and saved only once.
+    final platform = WidgetsBinding.instance.platformDispatcher;
+    if (_preferences.theme == ThemePreference.system) {
+      _preferences = _preferences.withTheme(
+        platform.platformBrightness == Brightness.dark
+            ? ThemePreference.dark
+            : ThemePreference.light,
+      );
+    }
+    if (_preferences.language == LanguagePreference.system) {
+      _preferences = _preferences.withLanguage(
+        platform.locales.firstOrNull?.languageCode == 'es'
+            ? LanguagePreference.spanish
+            : LanguagePreference.english,
+      );
+    }
+    if (saved.theme != _preferences.theme ||
+        saved.language != _preferences.language) {
+      _persist();
+    }
     if (mounted) widget.onThemeChanged?.call(_preferences.theme);
     if (mounted) widget.onLanguageChanged?.call(_preferences.language);
     return items;
@@ -267,20 +288,28 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                       ),
                       const SizedBox(height: 20),
                       Text(l10n.chooseCountry),
+                      const SizedBox(height: 4),
+                      Text(
+                        l10n.quickFlagHint,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
                       const SizedBox(height: 24),
-                      TextField(
-                        controller: _search,
-                        onChanged: (_) => setState(() {}),
-                        decoration: InputDecoration(
-                          hintText: l10n.searchCountries,
-                          prefixIcon: const Icon(Icons.search),
-                          suffixIcon: _search.text.isEmpty
-                              ? null
-                              : IconButton(
-                                  tooltip: l10n.clearSearch,
-                                  icon: const Icon(Icons.close),
-                                  onPressed: () => setState(_search.clear),
-                                ),
+                      Semantics(
+                        container: true,
+                        child: TextField(
+                          controller: _search,
+                          onChanged: (_) => setState(() {}),
+                          decoration: InputDecoration(
+                            hintText: l10n.searchCountries,
+                            prefixIcon: const Icon(Icons.search),
+                            suffixIcon: _search.text.isEmpty
+                                ? null
+                                : IconButton(
+                                    tooltip: l10n.clearSearch,
+                                    icon: const Icon(Icons.close),
+                                    onPressed: () => setState(_search.clear),
+                                  ),
+                          ),
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -410,6 +439,36 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                   _persist();
                 }
 
+                final actions = Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    _quickMenu(item),
+                    if (_selected?.id == item.id)
+                      Icon(
+                        Icons.check_circle,
+                        size: 18,
+                        semanticLabel: l10n.selected,
+                      ),
+                    Semantics(
+                      container: true,
+                      excludeSemantics: true,
+                      label: favoriteLabel,
+                      button: true,
+                      toggled: favorite,
+                      onTap: toggleFavorite,
+                      child: IconButton(
+                        tooltip: favoriteLabel,
+                        isSelected: favorite,
+                        icon: const Icon(Icons.star_border),
+                        selectedIcon: const Icon(Icons.star),
+                        onPressed: toggleFavorite,
+                      ),
+                    ),
+                  ],
+                );
+                final constrained =
+                    MediaQuery.sizeOf(context).width < 360 ||
+                    MediaQuery.textScalerOf(context).scale(16) > 20;
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Material(
@@ -435,37 +494,20 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                         excludeFromSemantics: true,
                       ),
                       title: Text(item.displayName(l10n.localeName)),
-                      subtitle: _preferences.quickFlag == item.id
+                      subtitle: constrained
+                          ? Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (_preferences.quickFlag == item.id)
+                                  Text(l10n.quickFlag),
+                                actions,
+                              ],
+                            )
+                          : _preferences.quickFlag == item.id
                           ? Text(l10n.quickFlag)
                           : null,
                       selected: _selected?.id == item.id,
-                      trailing: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          _quickMenu(item),
-                          if (_selected?.id == item.id)
-                            Icon(
-                              Icons.check_circle,
-                              size: 18,
-                              semanticLabel: l10n.selected,
-                            ),
-                          Semantics(
-                            container: true,
-                            excludeSemantics: true,
-                            label: favoriteLabel,
-                            button: true,
-                            toggled: favorite,
-                            onTap: toggleFavorite,
-                            child: IconButton(
-                              tooltip: favoriteLabel,
-                              isSelected: favorite,
-                              icon: const Icon(Icons.star_border),
-                              selectedIcon: const Icon(Icons.star),
-                              onPressed: toggleFavorite,
-                            ),
-                          ),
-                        ],
-                      ),
+                      trailing: constrained ? null : actions,
                       onTap: () {
                         FocusManager.instance.primaryFocus?.unfocus();
                         setState(() {

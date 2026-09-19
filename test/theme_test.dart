@@ -58,69 +58,146 @@ void main() {
     });
   }
 
-  testWidgets(
-    'System default, Light, Dark, System apply immediately and follow OS',
-    (tester) async {
-      final store = PendingStore();
-      addTearDown(() {
-        if (!store.gate.isCompleted) store.gate.complete();
-      });
-      tester.platformDispatcher.platformBrightnessTestValue = Brightness.dark;
-      addTearDown(tester.platformDispatcher.clearPlatformBrightnessTestValue);
-      await tester.pumpWidget(
-        AllFlagApp(
-          repository: CountryFlagCatalog(SnapshotRepository([])),
-          preferencesStore: store,
-        ),
-      );
-      await tester.pumpAndSettle();
-      expect(
-        tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,
-        ThemeMode.system,
-      );
-      expect(
-        Theme.of(tester.element(find.byType(TextField))).brightness,
-        Brightness.dark,
-      );
-      for (final entry in [
-        ('Light', ThemeMode.light, Brightness.light),
-        ('Dark', ThemeMode.dark, Brightness.dark),
-        ('System', ThemeMode.system, Brightness.dark),
-      ]) {
-        await tester.tap(find.byTooltip('Theme'));
-        await tester.pumpAndSettle();
-        expect(find.byType(PopupMenuItem<ThemePreference>), findsNWidgets(3));
-        expect(find.byIcon(Icons.check), findsOneWidget);
-        await tester.tap(find.text(entry.$1));
-        await tester.pumpAndSettle();
+  for (final locale in ['en', 'es']) {
+    testWidgets(
+      '$locale direct toggle, action semantics and immediate updates',
+      (tester) async {
+        final store = PendingStore();
+        addTearDown(() {
+          if (!store.gate.isCompleted) store.gate.complete();
+        });
+        tester.platformDispatcher.localesTestValue = [Locale(locale)];
+        tester.platformDispatcher.platformBrightnessTestValue =
+            Brightness.light;
+        addTearDown(tester.platformDispatcher.clearLocalesTestValue);
+        addTearDown(tester.platformDispatcher.clearPlatformBrightnessTestValue);
+        final semantics = tester.ensureSemantics();
+        try {
+          await tester.pumpWidget(
+            AllFlagApp(
+              repository: CountryFlagCatalog(SnapshotRepository([])),
+              preferencesStore: store,
+            ),
+          );
+          await tester.pumpAndSettle();
+          for (var tap = 0; tap < 6; tap++) {
+            final dark = tap.isOdd;
+            final label = locale == 'es'
+                ? (dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro')
+                : (dark ? 'Switch to light mode' : 'Switch to dark mode');
+            expect(find.byTooltip(label), findsOneWidget);
+            expect(find.bySemanticsLabel(label), findsOneWidget);
+            expect(
+              find.byIcon(
+                dark ? Icons.light_mode_outlined : Icons.dark_mode_outlined,
+              ),
+              findsOneWidget,
+            );
+            final size = tester.getSize(
+              find.byKey(const ValueKey('appearance-toggle')),
+            );
+            expect(size.width, greaterThanOrEqualTo(48));
+            expect(size.height, greaterThanOrEqualTo(48));
+            expect(find.byType(PopupMenuButton<ThemePreference>), findsNothing);
+            await tester.tap(find.byTooltip(label));
+            await tester.pump();
+            expect(
+              tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,
+              dark ? ThemeMode.light : ThemeMode.dark,
+            );
+            await tester.pumpAndSettle();
+            expect(
+              Theme.of(tester.element(find.byType(TextField))).brightness,
+              dark ? Brightness.light : Brightness.dark,
+            );
+            expect(find.byType(PopupMenuItem<ThemePreference>), findsNothing);
+          }
+          expect(store.gate.isCompleted, isFalse);
+          store.gate.complete();
+          await tester.pumpAndSettle();
+          expect(store.value.theme, ThemePreference.light);
+          await tester.tap(find.byIcon(Icons.language));
+          await tester.pumpAndSettle();
+          expect(
+            find.byType(PopupMenuItem<LanguagePreference>),
+            findsNWidgets(2),
+          );
+          expect(find.text('English'), findsOneWidget);
+          expect(find.text('Español'), findsOneWidget);
+          expect(find.text('System'), findsNothing);
+          expect(find.text('Sistema'), findsNothing);
+        } finally {
+          semantics.dispose();
+        }
+      },
+    );
+  }
+
+  for (final brightness in Brightness.values) {
+    for (final raw in <String?>[
+      null,
+      '{}',
+      '{"theme":"system"}',
+      '{"theme":"unknown"}',
+      '{"theme":3}',
+    ]) {
+      testWidgets('$brightness migrates $raw once and survives restart', (
+        tester,
+      ) async {
+        final disk = MemoryStorage();
+        if (raw != null) {
+          disk.values[SharedPreferencesFlagStore.storageKey] = raw;
+        }
+        tester.platformDispatcher.platformBrightnessTestValue = brightness;
+        addTearDown(tester.platformDispatcher.clearPlatformBrightnessTestValue);
+        Future<void> start() async {
+          await tester.pumpWidget(
+            AllFlagApp(
+              repository: CountryFlagCatalog(SnapshotRepository([])),
+              preferencesStore: SharedPreferencesFlagStore(storage: disk),
+            ),
+          );
+          await tester.pumpAndSettle();
+        }
+
+        await start();
+        final expected = brightness == Brightness.dark
+            ? ThemePreference.dark
+            : ThemePreference.light;
         expect(
-          tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,
-          entry.$2,
+          (await SharedPreferencesFlagStore(storage: disk).load()).theme,
+          expected,
         );
+        tester.platformDispatcher.platformBrightnessTestValue =
+            brightness == Brightness.dark ? Brightness.light : Brightness.dark;
+        await tester.pumpAndSettle();
         expect(
           Theme.of(tester.element(find.byType(TextField))).brightness,
-          entry.$3,
+          brightness,
         );
-      }
-      // All changes are visible even while the first disk write is pending.
-      expect(store.gate.isCompleted, isFalse);
-      store.gate.complete();
-      await tester.pumpAndSettle();
-      expect(store.value.theme, ThemePreference.system);
-      tester.platformDispatcher.platformBrightnessTestValue = Brightness.light;
-      await tester.pumpAndSettle();
-      expect(
-        Theme.of(tester.element(find.byType(TextField))).brightness,
-        Brightness.light,
-      );
-    },
-  );
+        await tester.pumpWidget(const SizedBox.shrink());
+        await start();
+        expect(
+          Theme.of(tester.element(find.byType(TextField))).brightness,
+          brightness,
+        );
+      });
+    }
+  }
 
-  for (final theme in ThemePreference.values) {
-    testWidgets('${theme.name} survives app recreation and rotation', (
+  for (final theme in [ThemePreference.light, ThemePreference.dark]) {
+    testWidgets('${theme.name} selected by tap survives restart and rotation', (
       tester,
     ) async {
       final disk = MemoryStorage();
+      await SharedPreferencesFlagStore(storage: disk).save(
+        FlagPreferences(
+          theme: theme == ThemePreference.light
+              ? ThemePreference.dark
+              : ThemePreference.light,
+          language: LanguagePreference.english,
+        ),
+      );
       Future<void> start() async {
         await tester.pumpWidget(
           AllFlagApp(
@@ -132,23 +209,17 @@ void main() {
       }
 
       await start();
-      await tester.tap(find.byTooltip('Theme'));
+      await tester.tap(find.byKey(const ValueKey('appearance-toggle')));
       await tester.pumpAndSettle();
-      await tester.tap(
-        find.text(switch (theme) {
-          ThemePreference.system => 'System',
-          ThemePreference.light => 'Light',
-          ThemePreference.dark => 'Dark',
-        }),
+      expect(
+        (await SharedPreferencesFlagStore(storage: disk).load()).theme,
+        theme,
       );
-      await tester.pumpAndSettle();
       await tester.pumpWidget(const SizedBox.shrink());
       await start();
-      final expected = switch (theme) {
-        ThemePreference.system => ThemeMode.system,
-        ThemePreference.light => ThemeMode.light,
-        ThemePreference.dark => ThemeMode.dark,
-      };
+      final expected = theme == ThemePreference.light
+          ? ThemeMode.light
+          : ThemeMode.dark;
       expect(
         tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,
         expected,

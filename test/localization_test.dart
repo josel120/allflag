@@ -65,7 +65,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byIcon(Icons.language));
     await tester.pumpAndSettle();
-    expect(find.byType(PopupMenuItem<LanguagePreference>), findsNWidgets(3));
+    expect(find.byType(PopupMenuItem<LanguagePreference>), findsNWidgets(2));
     await tester.tap(find.text(option));
     await tester.pumpAndSettle();
   }
@@ -265,17 +265,22 @@ void main() {
     ) async {
       final store = MemoryPreferencesStore();
       await launch(tester, store: store, locale: locale);
-      expect(store.value.language, LanguagePreference.system);
+      expect(
+        store.value.language,
+        locale.languageCode == 'es'
+            ? LanguagePreference.spanish
+            : LanguagePreference.english,
+      );
       expect(
         tester.widget<MaterialApp>(find.byType(MaterialApp)).locale,
-        isNull,
+        Locale(locale.languageCode == 'es' ? 'es' : 'en'),
       );
       expect(activeLocale(tester), locale.languageCode == 'es' ? 'es' : 'en');
     });
   }
 
   testWidgets(
-    'explicit languages and return to System update before pending save',
+    'explicit languages update before pending save and ignore OS changes',
     (tester) async {
       final store = PendingStore();
       addTearDown(() {
@@ -288,18 +293,13 @@ void main() {
       await language(tester, 'Español');
       expect(activeLocale(tester), 'es');
       expect(find.text(es.tagline), findsOneWidget);
-      await language(tester, 'Sistema');
-      expect(
-        tester.widget<MaterialApp>(find.byType(MaterialApp)).locale,
-        isNull,
-      );
       tester.platformDispatcher.localesTestValue = [const Locale('de')];
       await tester.pumpAndSettle();
-      expect(activeLocale(tester), 'en');
+      expect(activeLocale(tester), 'es');
       expect(store.gate.isCompleted, isFalse);
       store.gate.complete();
       await tester.pumpAndSettle();
-      expect(store.value.language, LanguagePreference.system);
+      expect(store.value.language, LanguagePreference.spanish);
     },
   );
 
@@ -308,9 +308,7 @@ void main() {
     (tester) async {
       final disk = MemoryStorage();
       await launch(tester, store: SharedPreferencesFlagStore(storage: disk));
-      await tester.tap(find.byTooltip('Theme'));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Dark'));
+      await tester.tap(find.byTooltip('Switch to dark mode'));
       await tester.pumpAndSettle();
       await language(tester, 'Español');
       expect(
@@ -337,9 +335,7 @@ void main() {
         expect(activeLocale(tester), 'es');
         expect(tester.takeException(), isNull);
       }
-      await tester.tap(find.byTooltip('Tema'));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Claro'));
+      await tester.tap(find.byTooltip('Cambiar a modo claro'));
       await tester.pumpAndSettle();
       expect(activeLocale(tester), 'es');
       expect(
@@ -450,7 +446,18 @@ void main() {
             size: Size(width, 900),
             scale: scale,
           );
+          await tester.scrollUntilVisible(
+            find.text('Todos los países'),
+            150,
+            scrollable: find.byType(Scrollable).first,
+          );
           expect(find.text('Todos los países'), findsOneWidget);
+          await tester.scrollUntilVisible(
+            find.byType(TextField),
+            -150,
+            scrollable: find.byType(Scrollable).first,
+          );
+          await tester.pumpAndSettle();
           for (final name in [
             'República Centroafricana',
             'Emiratos Árabes Unidos',
@@ -465,7 +472,12 @@ void main() {
             );
             await tester.ensureVisible(find.byType(ListTile));
             await tester.pumpAndSettle();
-            await tester.tap(find.byType(ListTile));
+            await tester.tap(
+              find.descendant(
+                of: find.byType(ListTile),
+                matching: find.text(name),
+              ),
+            );
             await tester.pumpAndSettle();
             await tester.scrollUntilVisible(
               find.byType(ListTile),
@@ -481,7 +493,14 @@ void main() {
             final favorite = tester.getRect(
               find.byTooltip(es.addFavorite(name)),
             );
-            expect(title.right, lessThanOrEqualTo(favorite.left));
+            if (width < 360 || scale == 2) {
+              // Actions move below the name; retain non-overlap and add a
+              // readable-width assertion for the responsive arrangement.
+              expect(title.bottom, lessThanOrEqualTo(favorite.top));
+              expect(title.width, greaterThanOrEqualTo(width - 132));
+            } else {
+              expect(title.right, lessThanOrEqualTo(favorite.left));
+            }
             expect(
               tester.widget<ListTile>(find.byType(ListTile)).selected,
               isTrue,

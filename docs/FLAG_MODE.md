@@ -1,9 +1,15 @@
 # Immersive Flag Mode — AllFlag v0.6.0+8
 
+> v0.9 current behavior: explicit Quick Flag permits Android portrait fallback with
+> immersive/awake requests, localized exit recovery and a Home discovery hint.
+> See [release readiness](RELEASE_READINESS_v0.9.md). Physical-rotation mode retains
+> its landscape guard; historical no-button/no-orientation-request statements below
+> apply to ordinary rotation sessions only.
+
 > v0.8 update: core features now use FlagItem/FlagId and FlagPreferences.
 > Country-only persistence details below describe the original release; see
-> [Generic Flag Catalog and migration](GENERIC_FLAG_CATALOG.md) for the current schema.
-> User-facing behavior and device QA expectations remain unchanged.
+> [Generic Flag Catalog and migration](FLAG_CATALOG_ARCHITECTURE.md) for the current schema.
+> Historical release details follow; current changes and QA are linked above.
 
 ## Activation and exit
 
@@ -189,7 +195,7 @@ For every flag/direction:
 
 Lifecycle, settings and user control:
 
-- [ ] Repeat representative flags in Light, Dark and System, and English/Spanish.
+- [ ] Repeat representative flags in Light and Dark, and English/Spanish.
   Flag Mode remains black; portrait restores the chosen theme and language.
 - [ ] Favorite a country and create several recents; enter/exit repeatedly and
   confirm favorites are unchanged and recents are neither duplicated nor reordered.

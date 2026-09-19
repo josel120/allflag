@@ -35,6 +35,13 @@ class RetryRepository extends SnapshotRepository {
 }
 
 class DelayedPreferencesStore extends MemoryPreferencesStore {
+  DelayedPreferencesStore()
+    : super(
+        FlagPreferences(
+          theme: ThemePreference.light,
+          language: LanguagePreference.english,
+        ),
+      );
   final gate = Completer<void>();
   int writes = 0;
   @override

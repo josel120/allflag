@@ -59,7 +59,9 @@ class _FlagScreenState extends State<FlagScreen> {
           ),
           errorBuilder: (context, error, stackTrace) => Center(
             child: Text(
-              AppLocalizations.of(context).flagUnavailable,
+              widget.onExit == null
+                  ? AppLocalizations.of(context).flagUnavailable
+                  : AppLocalizations.of(context).quickFlagUnavailable,
               style: const TextStyle(color: Colors.white),
             ),
           ),
@@ -78,9 +80,10 @@ class _FlagScreenState extends State<FlagScreen> {
         children: [
           Semantics(
             onTap: _reveal,
-            hint: l10n.revealFlagControls,
+            label: l10n.revealFlagControls,
             child: GestureDetector(
               behavior: HitTestBehavior.opaque,
+              excludeFromSemantics: true,
               onTap: _reveal,
               child: flag,
             ),

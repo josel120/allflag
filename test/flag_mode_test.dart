@@ -248,6 +248,12 @@ void main() {
     (tester) async {
       final platform = RecordingFlagModePlatform();
       await start(tester, platform);
+      await tester.tap(find.byTooltip('Switch to dark mode'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byIcon(Icons.language));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Español'));
+      await tester.pumpAndSettle();
       await select(tester, 'US');
       await rotate(tester, true);
       tester.platformDispatcher.platformBrightnessTestValue = Brightness.dark;

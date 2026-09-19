@@ -4,11 +4,17 @@ AllFlag turns a smartphone into a digital flag. Search for a country in portrait
 select it, then rotate horizontally to display its flag without cropping or
 distortion. Rotate back to choose another country.
 
-## v0.8.0+10 scope
+## v0.9.0+11 release candidate
+
+Quick Flag supports Android portrait fallback when landscape is refused. Constrained
+rows provide more readable names, with localized discovery/recovery copy and stronger
+automated accessibility checks. See [release readiness and physical QA](docs/RELEASE_READINESS_v0.9.md).
+
+### Retained v0.8 foundation
 
 - Generic FlagId, FlagItem and FlagCatalog foundation; the visible catalog remains the same 195 countries.
 - Automatic, idempotent migration of Favorites, Recent and Quick Flag to namespaced IDs; theme and language are preserved.
-- See [generic catalog architecture and migration](docs/GENERIC_FLAG_CATALOG.md).
+- See [generic catalog architecture and migration](docs/FLAG_CATALOG_ARCHITECTURE.md).
 
 - One persistent Quick Flag, independent of Favorites, with a localized Home card and Show flag action.
 - Country actions assign or replace it; programmatic entry reuses Flag Mode with temporary exit controls and orientation restoration.
@@ -84,7 +90,7 @@ For iOS, macOS/Xcode and signing setup are required. Android release signing
 uses the existing private configuration documented in the
 [release guide](docs/GOOGLE_PLAY_RELEASE.md). Do not commit signing credentials.
 The permanent package is com.allflag.allflag. v0.2.0 Internal Testing distribution
-was confirmed by the owner, as was v0.4.0. v0.6.0 is not uploaded by this task.
+was confirmed by the owner, as was v0.4.0. v0.9.0 is not uploaded or tagged by this task.
 
 ## Limitations and follow-up
 

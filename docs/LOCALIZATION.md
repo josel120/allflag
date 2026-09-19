@@ -2,20 +2,18 @@
 
 > v0.8 update: core features now use FlagItem/FlagId and FlagPreferences.
 > Country-only persistence details below describe the original release; see
-> [Generic Flag Catalog and migration](GENERIC_FLAG_CATALOG.md) for the current schema.
+> [Generic Flag Catalog and migration](FLAG_CATALOG_ARCHITECTURE.md) for the current schema.
 > User-facing behavior and device QA expectations remain unchanged.
 
 ## Supported locales and selection
 
 AllFlag supports exactly English (`en`) and Spanish (`es`). The home header's
-globe opens three options: **System**, **English**, **Español**. Language names
-stay in their native spelling to make switching back easy. System is shown as
-Sistema in Spanish. There is no separate Settings screen.
+globe opens only **English** and **Español**. Language names stay in their native
+spelling to make switching back easy. There is no System option.
 
-System is the default. The primary device/application locale selects Spanish
-for any `es` region (including es-ES, es-MX and es-PE); all other locales, or an
-absent locale, resolve to English. Explicit English or Spanish overrides the
-device locale. Returning to System resumes platform locale updates immediately.
+On first launch or migration, the primary device locale establishes Spanish for
+any `es` region and English otherwise. This explicit preference is saved and
+subsequent device locale changes do not alter it.
 The iOS host declares English and Spanish in `CFBundleLocalizations` and English
 as its development region.
 
@@ -84,8 +82,8 @@ Favorites and Recent sections remain hidden while a nonempty query is active.
 
 `LanguagePreference` has `system`, `english`, and `spanish` values, stored in the
 existing `allflag.country_preferences.v1` JSON snapshot under `language`.
-Missing, invalid or unknown values default to System, so existing installs need
-no migration. Theme and language are independent fields. All immutable snapshot
+Missing, invalid or unknown values decode to the legacy System sentinel and
+are resolved and persisted as an explicit preference on startup. Theme and language are independent fields. All immutable snapshot
 updates preserve both, favorites and recents.
 
 `SharedPreferencesCountryStore` continues using `SharedPreferencesAsync` native

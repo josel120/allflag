@@ -46,6 +46,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dark => 'Oscuro';
 
   @override
+  String get switchToDarkMode => 'Cambiar a modo oscuro';
+
+  @override
+  String get switchToLightMode => 'Cambiar a modo claro';
+
+  @override
   String get theme => 'Tema';
 
   @override
@@ -305,6 +311,14 @@ class AppLocalizationsEs extends AppLocalizations {
     });
     return '$_temp0';
   }
+
+  @override
+  String get quickFlagHint =>
+      'Usa el menú de un país para fijar una bandera rápida.';
+
+  @override
+  String get quickFlagUnavailable =>
+      'Bandera no disponible. Toca para mostrar el botón de salida y cerrar el modo bandera.';
 
   @override
   String get quickFlag => 'Bandera rápida';

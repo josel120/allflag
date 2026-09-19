@@ -16,3 +16,6 @@ key.properties
 *.keystore
 android/key.properties
 android/keystore/
+
+# Kotlin compiler session state
+/.kotlin/

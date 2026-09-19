@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 /// One transition owns both system overlays and the foreground screen-awake flag.
 abstract interface class FlagModePlatform {
-  Future<void> setActive(bool active);
+  Future<void> setActive(bool active, {bool programmatic = false});
   Future<void> setLandscapeRequested(bool requested);
 }
 
@@ -27,12 +27,15 @@ class NativeFlagModePlatform implements FlagModePlatform {
       );
 
   @override
-  Future<void> setActive(bool active) async {
+  Future<void> setActive(bool active, {bool programmatic = false}) async {
     final system = operatingSystem ?? Platform.operatingSystem;
     if (system == 'android') {
       // Flutter's legacy immersive modes are ignored with target SDK 36.
       // The host uses WindowInsetsControllerCompat, keeping edge-to-edge enabled.
-      await channel.invokeMethod<void>('setFlagMode', active);
+      await channel.invokeMethod<void>(
+        programmatic && active ? 'setQuickFlagMode' : 'setFlagMode',
+        active,
+      );
       return;
     }
     if (system == 'ios') {

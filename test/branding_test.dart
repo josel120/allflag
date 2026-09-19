@@ -139,7 +139,7 @@ void main() {
         );
         expect(
           tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,
-          ThemeMode.system,
+          brightness == Brightness.dark ? ThemeMode.dark : ThemeMode.light,
         );
         await screenshot(tester, 'home-${brightness.name}');
         await tester.enterText(find.byType(TextField), 'Atlantis');
@@ -199,7 +199,12 @@ void main() {
           await tester.pumpAndSettle();
           await tester.ensureVisible(find.byType(ListTile));
           await tester.pumpAndSettle();
-          await tester.tap(find.byType(ListTile));
+          await tester.tap(
+            find.descendant(
+              of: find.byType(ListTile),
+              matching: find.text(name),
+            ),
+          );
           await tester.pumpAndSettle();
           await tester.scrollUntilVisible(
             find.byType(ListTile),
@@ -224,7 +229,14 @@ void main() {
                 ? find.byTooltip('Remove $name from favorites')
                 : find.byTooltip('Add $name to favorites'),
           );
-          expect(title.right, lessThanOrEqualTo(favorite.left));
+          if (width < 360 || scale == 2) {
+            // Actions move below the name; retain non-overlap and add a
+            // readable-width assertion for the responsive arrangement.
+            expect(title.bottom, lessThanOrEqualTo(favorite.top));
+            expect(title.width, greaterThanOrEqualTo(width - 132));
+          } else {
+            expect(title.right, lessThanOrEqualTo(favorite.left));
+          }
           // The lazy list can dispose the header after scrolling a tall row.
           // Scroll it back into the tree before asking to interact with it.
           await tester.scrollUntilVisible(

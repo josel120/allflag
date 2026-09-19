@@ -183,9 +183,7 @@ void main() {
       expect(find.text('Alemania'), findsWidgets);
       expect(find.text('Lista para mostrar'), findsOneWidget);
       expect(find.text('Mostrar bandera'), findsOneWidget);
-      await tester.tap(find.byTooltip('Tema'));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Oscuro'));
+      await tester.tap(find.byTooltip('Cambiar a modo oscuro'));
       await tester.pumpAndSettle();
       expect(store.value.quickFlag?.value, 'DE');
       expect(store.value.theme, ThemePreference.dark);

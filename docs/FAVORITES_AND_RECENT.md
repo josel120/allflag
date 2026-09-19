@@ -2,7 +2,7 @@
 
 > v0.8 update: core features now use FlagItem/FlagId and FlagPreferences.
 > Country-only persistence details below describe the original release; see
-> [Generic Flag Catalog and migration](GENERIC_FLAG_CATALOG.md) for the current schema.
+> [Generic Flag Catalog and migration](FLAG_CATALOG_ARCHITECTURE.md) for the current schema.
 > User-facing behavior and device QA expectations remain unchanged.
 
 The existing country selector now has optional Favorites and Recent sections,

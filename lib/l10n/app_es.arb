@@ -12,6 +12,8 @@
     "system":  "Sistema",
     "light":  "Claro",
     "dark":  "Oscuro",
+    "switchToDarkMode": "Cambiar a modo oscuro",
+    "switchToLightMode": "Cambiar a modo claro",
     "theme":  "Tema",
     "language":  "Idioma",
     "english":  "Inglés",
@@ -37,6 +39,8 @@
                                           },
                          "description":  "Bundled ISO alpha-2 display names. Keep every catalog code in every locale."
                      },
+    "quickFlagHint": "Usa el menú de un país para fijar una bandera rápida.",
+    "quickFlagUnavailable": "Bandera no disponible. Toca para mostrar el botón de salida y cerrar el modo bandera.",
     "quickFlag":  "Bandera rápida",
     "revealFlagControls":  "Mostrar control para salir",
     "countryActions":  "Acciones para {country}",

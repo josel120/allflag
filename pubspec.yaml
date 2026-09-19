@@ -1,7 +1,7 @@
 ﻿name: allflag
 description: Turn your phone into the flag you want to show right now.
 publish_to: 'none'
-version: 0.8.0+10
+version: 0.9.0+11
 environment:
   sdk: ^3.13.2
 dependencies:

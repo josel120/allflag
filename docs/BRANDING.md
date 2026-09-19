@@ -40,8 +40,10 @@ launch backgrounds must be kept aligned if the palette changes.
 ## Tokens and themes
 
 `lib/ui/brand_theme.dart` owns `BrandTokens` and both Material 3 themes.
-`AllFlagApp` uses `ThemeMode.system`; there is no extra theme setting or stored
-theme preference. Widgets use semantic `ColorScheme` roles and component themes.
+`AllFlagApp` persists an explicit Light or Dark preference. The header moon/sun
+button switches immediately to the opposite theme with a localized action label.
+Fresh installs and legacy System values resolve once from platform brightness
+(dark selects Dark; otherwise Light), then ignore OS theme changes. Widgets use semantic `ColorScheme` roles and component themes.
 
 | Token / role | Light | Dark |
 | --- | --- | --- |
