@@ -60,4 +60,4 @@ We may update this Privacy Policy when AllFlag's information practices or applic
 
 ## 12. Contact Us
 
-If you have questions about this Privacy Policy or AllFlag's privacy practices, contact us at [josedevelopergomez@gmail.com](mailto:josedevelopergomez@gmail.com).
+If you have questions about this Privacy Policy or AllFlag's privacy practices, contact us at [josegomezdeveloper@gmail.com](mailto:josegomezdeveloper@gmail.com).
