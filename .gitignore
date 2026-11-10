@@ -57,3 +57,6 @@ app.*.map.json
 
 # Generated Gradle output
 /android/build/
+
+# Local IDE upgrade-assistant leftovers; never part of the app.
+/.github/modernize/
