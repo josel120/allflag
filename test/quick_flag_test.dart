@@ -255,6 +255,8 @@ void main() {
               150,
               scrollable: find.byType(Scrollable).first,
             );
+            await tester.ensureVisible(row);
+            await tester.pumpAndSettle();
             await tester.pumpAndSettle();
             final bounds = tester.getRect(row);
             final flag = tester.getRect(
@@ -374,6 +376,8 @@ void main() {
       200,
       scrollable: find.byType(Scrollable).first,
     );
+    await tester.ensureVisible(find.text('Mostrar bandera'));
+    await tester.pumpAndSettle();
     await tester.pumpAndSettle();
     await tester.tap(find.text('Mostrar bandera'));
     await tester.pumpAndSettle();

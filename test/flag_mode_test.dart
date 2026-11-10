@@ -54,6 +54,8 @@ void main() {
       150,
       scrollable: find.byType(Scrollable).first,
     );
+    await tester.ensureVisible(find.byKey(ValueKey('country:$code')));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(ValueKey('country:$code')));
     await tester.pumpAndSettle();
   }
@@ -211,6 +213,8 @@ void main() {
           150,
           scrollable: find.byType(Scrollable).first,
         );
+        await tester.ensureVisible(find.byKey(const ValueKey('country:CH')));
+        await tester.pumpAndSettle();
         expect(
           tester
               .widget<ListTile>(find.byKey(const ValueKey('country:CH')))

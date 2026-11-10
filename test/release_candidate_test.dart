@@ -65,6 +65,8 @@ Future<void> reveal(WidgetTester tester, Finder finder) async {
   );
   await tester.ensureVisible(finder);
   await tester.pumpAndSettle();
+  await tester.ensureVisible(finder);
+  await tester.pumpAndSettle();
 }
 
 void main() {

@@ -211,6 +211,8 @@ void main() {
             150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.byType(ListTile));
+          await tester.pumpAndSettle();
           await tester.pumpAndSettle();
           expect(find.widgetWithText(ListTile, name), findsOneWidget);
           expect(
@@ -244,6 +246,8 @@ void main() {
             -150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.byType(TextField));
+          await tester.pumpAndSettle();
           await tester.pumpAndSettle();
         }
         if (width == 320 && scale == 2) {

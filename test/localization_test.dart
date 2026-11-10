@@ -453,12 +453,16 @@ void main() {
             150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.text('Todos los países'));
+          await tester.pumpAndSettle();
           expect(find.text('Todos los países'), findsOneWidget);
           await tester.scrollUntilVisible(
             find.byType(TextField),
             -150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.byType(TextField));
+          await tester.pumpAndSettle();
           await tester.pumpAndSettle();
           for (final name in [
             'República Centroafricana',
@@ -474,6 +478,8 @@ void main() {
             );
             await tester.ensureVisible(find.byType(ListTile));
             await tester.pumpAndSettle();
+            await tester.ensureVisible(find.byType(ListTile));
+            await tester.pumpAndSettle();
             await tester.tap(
               find.descendant(
                 of: find.byType(ListTile),
@@ -486,6 +492,8 @@ void main() {
               150,
               scrollable: find.byType(Scrollable).first,
             );
+            await tester.ensureVisible(find.byType(ListTile));
+            await tester.pumpAndSettle();
             final title = tester.getRect(
               find.descendant(
                 of: find.byType(ListTile),
@@ -513,6 +521,8 @@ void main() {
               -150,
               scrollable: find.byType(Scrollable).first,
             );
+            await tester.ensureVisible(find.byType(TextField));
+            await tester.pumpAndSettle();
             await tester.pumpAndSettle();
           }
           await language(tester, 'English');
