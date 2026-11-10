@@ -355,6 +355,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Set {country} as Quick Flag'**
   String setQuickFlagLabel(String country);
+
+  /// No description provided for @themeMenuLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme: {mode}'**
+  String themeMenuLabel(String mode);
+
+  /// No description provided for @loadingCountries.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading countries…'**
+  String get loadingCountries;
+
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy policy'**
+  String get privacyPolicy;
+
+  /// No description provided for @privacyPolicyError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the privacy policy. Try again later.'**
+  String get privacyPolicyError;
 }
 
 class _AppLocalizationsDelegate

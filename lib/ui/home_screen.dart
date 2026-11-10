@@ -54,15 +54,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     );
     _preferences = saved.validFor(items.map((item) => item.id).toSet());
     if (!mounted) return items;
-    // System is a legacy/uninitialized sentinel, resolved and saved only once.
+    // Theme System is a real choice that follows the OS live. Language System
+    // is still resolved once: the language menu only offers concrete languages.
     final platform = WidgetsBinding.instance.platformDispatcher;
-    if (_preferences.theme == ThemePreference.system) {
-      _preferences = _preferences.withTheme(
-        platform.platformBrightness == Brightness.dark
-            ? ThemePreference.dark
-            : ThemePreference.light,
-      );
-    }
     if (_preferences.language == LanguagePreference.system) {
       _preferences = _preferences.withLanguage(
         platform.locales.firstOrNull?.languageCode == 'es'
@@ -70,10 +64,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             : LanguagePreference.english,
       );
     }
-    if (saved.theme != _preferences.theme ||
-        saved.language != _preferences.language) {
-      _persist();
-    }
+    if (saved.language != _preferences.language) _persist();
     if (mounted) widget.onThemeChanged?.call(_preferences.theme);
     if (mounted) widget.onLanguageChanged?.call(_preferences.language);
     return items;

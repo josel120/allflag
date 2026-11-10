@@ -1,3 +1,5 @@
+import 'support/theme_menu.dart';
+
 import 'package:allflag/data/country_flag_catalog.dart';
 
 import 'support/flag_fixtures.dart';
@@ -248,7 +250,7 @@ void main() {
     (tester) async {
       final platform = RecordingFlagModePlatform();
       await start(tester, platform);
-      await tester.tap(find.byTooltip('Switch to dark mode'));
+      await chooseTheme(tester, 'Dark');
       await tester.pumpAndSettle();
       await tester.tap(find.byIcon(Icons.language));
       await tester.pumpAndSettle();

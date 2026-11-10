@@ -50,5 +50,16 @@
     "setQuickFlag":  "Usar como bandera rápida",
     "showFlagLabel":  "Mostrar bandera de {country}",
     "readyToDisplay":  "Lista para mostrar",
-    "setQuickFlagLabel":  "Usar {country} como bandera rápida"
+    "setQuickFlagLabel":  "Usar {country} como bandera rápida",
+    "themeMenuLabel":  "Tema: {mode}",
+    "@themeMenuLabel":  {
+                            "placeholders":  {
+                                                 "mode":  {
+                                                              "type":  "String"
+                                                          }
+                                             }
+                        },
+    "loadingCountries":  "Cargando países…",
+    "privacyPolicy":  "Política de privacidad",
+    "privacyPolicyError":  "No se pudo abrir la política de privacidad. Inténtalo más tarde."
 }

@@ -178,10 +178,10 @@ void main() {
       expect(p.quickFlag, isNull);
       disk.values[SharedPreferencesFlagStore.storageKey] =
           '{"schemaVersion":99}';
-      await expectLater(
-        SharedPreferencesFlagStore(storage: disk).load(),
-        throwsFormatException,
-      );
+      // Downgrade from a future build: defaults, no lockout, no overwrite.
+      final future = await SharedPreferencesFlagStore(storage: disk).load();
+      expect(future.favorites, isEmpty);
+      expect(future.theme, ThemePreference.system);
       expect(disk.values.values.single, '{"schemaVersion":99}');
     },
   );

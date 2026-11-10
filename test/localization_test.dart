@@ -1,3 +1,5 @@
+import 'support/theme_menu.dart';
+
 import 'package:allflag/data/country_flag_catalog.dart';
 
 import 'support/flag_fixtures.dart';
@@ -308,7 +310,7 @@ void main() {
     (tester) async {
       final disk = MemoryStorage();
       await launch(tester, store: SharedPreferencesFlagStore(storage: disk));
-      await tester.tap(find.byTooltip('Switch to dark mode'));
+      await chooseTheme(tester, 'Dark');
       await tester.pumpAndSettle();
       await language(tester, 'Español');
       expect(
@@ -335,7 +337,7 @@ void main() {
         expect(activeLocale(tester), 'es');
         expect(tester.takeException(), isNull);
       }
-      await tester.tap(find.byTooltip('Cambiar a modo claro'));
+      await chooseTheme(tester, 'Claro');
       await tester.pumpAndSettle();
       expect(activeLocale(tester), 'es');
       expect(

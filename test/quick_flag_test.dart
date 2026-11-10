@@ -1,3 +1,5 @@
+import 'support/theme_menu.dart';
+
 import 'package:allflag/data/country_flag_catalog.dart';
 
 import 'support/flag_fixtures.dart';
@@ -183,7 +185,7 @@ void main() {
       expect(find.text('Alemania'), findsWidgets);
       expect(find.text('Lista para mostrar'), findsOneWidget);
       expect(find.text('Mostrar bandera'), findsOneWidget);
-      await tester.tap(find.byTooltip('Cambiar a modo oscuro'));
+      await chooseTheme(tester, 'Oscuro');
       await tester.pumpAndSettle();
       expect(store.value.quickFlag?.value, 'DE');
       expect(store.value.theme, ThemePreference.dark);

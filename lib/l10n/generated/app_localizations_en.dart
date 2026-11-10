@@ -354,4 +354,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String setQuickFlagLabel(String country) {
     return 'Set $country as Quick Flag';
   }
+
+  @override
+  String themeMenuLabel(String mode) {
+    return 'Theme: $mode';
+  }
+
+  @override
+  String get loadingCountries => 'Loading countries…';
+
+  @override
+  String get privacyPolicy => 'Privacy policy';
+
+  @override
+  String get privacyPolicyError =>
+      'Could not open the privacy policy. Try again later.';
 }

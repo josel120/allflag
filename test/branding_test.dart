@@ -139,7 +139,7 @@ void main() {
         );
         expect(
           tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,
-          brightness == Brightness.dark ? ThemeMode.dark : ThemeMode.light,
+          ThemeMode.system,
         );
         await screenshot(tester, 'home-${brightness.name}');
         await tester.enterText(find.byType(TextField), 'Atlantis');

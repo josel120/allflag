@@ -99,5 +99,16 @@
                                                                     "type":  "String"
                                                                 }
                                                 }
-                           }
+                           },
+    "themeMenuLabel":  "Theme: {mode}",
+    "@themeMenuLabel":  {
+                            "placeholders":  {
+                                                 "mode":  {
+                                                              "type":  "String"
+                                                          }
+                                             }
+                        },
+    "loadingCountries":  "Loading countries…",
+    "privacyPolicy":  "Privacy policy",
+    "privacyPolicyError":  "Could not open the privacy policy. Try again later."
 }

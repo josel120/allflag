@@ -263,8 +263,18 @@ void main() {
               ? "Use a country's menu to set a Quick Flag."
               : 'Usa el menú de un país para fijar una bandera rápida.',
         );
+        expect(
+          tester
+              .widget<PopupMenuButton<ThemePreference>>(
+                find.descendant(
+                  of: find.byKey(const ValueKey('theme-menu')),
+                  matching: find.byType(PopupMenuButton<ThemePreference>),
+                ),
+              )
+              .tooltip,
+          startsWith(l10n.theme),
+        );
         for (final label in [
-          l10n.switchToDarkMode,
           l10n.language,
           l10n.countryActions(item.displayName(locale)),
         ]) {

@@ -355,4 +355,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String setQuickFlagLabel(String country) {
     return 'Usar $country como bandera rápida';
   }
+
+  @override
+  String themeMenuLabel(String mode) {
+    return 'Tema: $mode';
+  }
+
+  @override
+  String get loadingCountries => 'Cargando países…';
+
+  @override
+  String get privacyPolicy => 'Política de privacidad';
+
+  @override
+  String get privacyPolicyError =>
+      'No se pudo abrir la política de privacidad. Inténtalo más tarde.';
 }
