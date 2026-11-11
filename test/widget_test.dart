@@ -141,7 +141,7 @@ void main() {
       expect(find.byType(AppBar), findsNothing);
       final image = tester.widget<Image>(find.byType(Image));
       expect(image.fit, BoxFit.contain);
-      expect((image.image as AssetImage).assetName, 'assets/flags/pe.png');
+      expect((image.image as AssetImage).assetName, 'assets/flags/pe.webp');
       expect(modes, contains('SystemUiMode.immersiveSticky'));
       tester.view.physicalSize = const Size(400, 900);
       await tester.pumpAndSettle();

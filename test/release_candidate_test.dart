@@ -15,7 +15,7 @@ import 'support/recording_flag_mode_platform.dart';
 
 final item = FlagItem(
   id: FlagId(FlagCategory('fixture'), 'long-name'),
-  asset: 'assets/flags/vc.png',
+  asset: 'assets/flags/vc.webp',
   defaultName: 'Saint Vincent and the Grenadines',
   localizedNames: {'es': 'San Vicente y las Granadinas'},
 );

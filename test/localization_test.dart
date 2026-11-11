@@ -422,7 +422,7 @@ void main() {
       expect(find.byType(Text), findsNothing);
       final flag = tester.widget<Image>(find.byType(Image));
       expect(flag.fit, BoxFit.contain);
-      expect((flag.image as AssetImage).assetName, 'assets/flags/de.png');
+      expect((flag.image as AssetImage).assetName, 'assets/flags/de.webp');
       expect(flag.semanticLabel, 'Bandera de Alemania');
       expect(
         tester.widget<Scaffold>(find.byType(Scaffold)).backgroundColor,

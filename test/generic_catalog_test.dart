@@ -211,7 +211,7 @@ void main() {
       // Synthetic category exists only in this test, reusing bundled test artwork.
       final item = FlagItem(
         id: id('fixture:sample'),
-        asset: 'assets/flags/pe.png',
+        asset: 'assets/flags/pe.webp',
         defaultName: 'Sample',
         localizedNames: {'es': 'Ejémplo'},
         searchAliases: ['demo'],

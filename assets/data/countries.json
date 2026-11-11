@@ -5,7 +5,7 @@
         "flag":  {
                      "id":  "af-current",
                      "name":  "Flag of Afghanistan",
-                     "asset":  "assets/flags/af.png",
+                     "asset":  "assets/flags/af.webp",
                      "startYear":  null
                  }
     },
@@ -15,7 +15,7 @@
         "flag":  {
                      "id":  "al-current",
                      "name":  "Flag of Albania",
-                     "asset":  "assets/flags/al.png",
+                     "asset":  "assets/flags/al.webp",
                      "startYear":  null
                  }
     },
@@ -25,7 +25,7 @@
         "flag":  {
                      "id":  "dz-current",
                      "name":  "Flag of Algeria",
-                     "asset":  "assets/flags/dz.png",
+                     "asset":  "assets/flags/dz.webp",
                      "startYear":  null
                  }
     },
@@ -35,7 +35,7 @@
         "flag":  {
                      "id":  "ad-current",
                      "name":  "Flag of Andorra",
-                     "asset":  "assets/flags/ad.png",
+                     "asset":  "assets/flags/ad.webp",
                      "startYear":  null
                  }
     },
@@ -45,7 +45,7 @@
         "flag":  {
                      "id":  "ao-current",
                      "name":  "Flag of Angola",
-                     "asset":  "assets/flags/ao.png",
+                     "asset":  "assets/flags/ao.webp",
                      "startYear":  null
                  }
     },
@@ -55,7 +55,7 @@
         "flag":  {
                      "id":  "ag-current",
                      "name":  "Flag of Antigua and Barbuda",
-                     "asset":  "assets/flags/ag.png",
+                     "asset":  "assets/flags/ag.webp",
                      "startYear":  null
                  }
     },
@@ -65,7 +65,7 @@
         "flag":  {
                      "id":  "ar-current",
                      "name":  "Flag of Argentina",
-                     "asset":  "assets/flags/ar.png",
+                     "asset":  "assets/flags/ar.webp",
                      "startYear":  null
                  }
     },
@@ -75,7 +75,7 @@
         "flag":  {
                      "id":  "am-current",
                      "name":  "Flag of Armenia",
-                     "asset":  "assets/flags/am.png",
+                     "asset":  "assets/flags/am.webp",
                      "startYear":  null
                  }
     },
@@ -85,7 +85,7 @@
         "flag":  {
                      "id":  "au-current",
                      "name":  "Flag of Australia",
-                     "asset":  "assets/flags/au.png",
+                     "asset":  "assets/flags/au.webp",
                      "startYear":  null
                  }
     },
@@ -95,7 +95,7 @@
         "flag":  {
                      "id":  "at-current",
                      "name":  "Flag of Austria",
-                     "asset":  "assets/flags/at.png",
+                     "asset":  "assets/flags/at.webp",
                      "startYear":  null
                  }
     },
@@ -105,7 +105,7 @@
         "flag":  {
                      "id":  "az-current",
                      "name":  "Flag of Azerbaijan",
-                     "asset":  "assets/flags/az.png",
+                     "asset":  "assets/flags/az.webp",
                      "startYear":  null
                  }
     },
@@ -115,7 +115,7 @@
         "flag":  {
                      "id":  "bs-current",
                      "name":  "Flag of Bahamas",
-                     "asset":  "assets/flags/bs.png",
+                     "asset":  "assets/flags/bs.webp",
                      "startYear":  null
                  }
     },
@@ -125,7 +125,7 @@
         "flag":  {
                      "id":  "bh-current",
                      "name":  "Flag of Bahrain",
-                     "asset":  "assets/flags/bh.png",
+                     "asset":  "assets/flags/bh.webp",
                      "startYear":  null
                  }
     },
@@ -135,7 +135,7 @@
         "flag":  {
                      "id":  "bd-current",
                      "name":  "Flag of Bangladesh",
-                     "asset":  "assets/flags/bd.png",
+                     "asset":  "assets/flags/bd.webp",
                      "startYear":  null
                  }
     },
@@ -145,7 +145,7 @@
         "flag":  {
                      "id":  "bb-current",
                      "name":  "Flag of Barbados",
-                     "asset":  "assets/flags/bb.png",
+                     "asset":  "assets/flags/bb.webp",
                      "startYear":  null
                  }
     },
@@ -155,7 +155,7 @@
         "flag":  {
                      "id":  "by-current",
                      "name":  "Flag of Belarus",
-                     "asset":  "assets/flags/by.png",
+                     "asset":  "assets/flags/by.webp",
                      "startYear":  null
                  }
     },
@@ -165,7 +165,7 @@
         "flag":  {
                      "id":  "be-current",
                      "name":  "Flag of Belgium",
-                     "asset":  "assets/flags/be.png",
+                     "asset":  "assets/flags/be.webp",
                      "startYear":  null
                  }
     },
@@ -175,7 +175,7 @@
         "flag":  {
                      "id":  "bz-current",
                      "name":  "Flag of Belize",
-                     "asset":  "assets/flags/bz.png",
+                     "asset":  "assets/flags/bz.webp",
                      "startYear":  null
                  }
     },
@@ -185,7 +185,7 @@
         "flag":  {
                      "id":  "bj-current",
                      "name":  "Flag of Benin",
-                     "asset":  "assets/flags/bj.png",
+                     "asset":  "assets/flags/bj.webp",
                      "startYear":  null
                  }
     },
@@ -195,7 +195,7 @@
         "flag":  {
                      "id":  "bt-current",
                      "name":  "Flag of Bhutan",
-                     "asset":  "assets/flags/bt.png",
+                     "asset":  "assets/flags/bt.webp",
                      "startYear":  null
                  }
     },
@@ -205,7 +205,7 @@
         "flag":  {
                      "id":  "bo-current",
                      "name":  "Flag of Bolivia",
-                     "asset":  "assets/flags/bo.png",
+                     "asset":  "assets/flags/bo.webp",
                      "startYear":  null
                  }
     },
@@ -215,7 +215,7 @@
         "flag":  {
                      "id":  "ba-current",
                      "name":  "Flag of Bosnia and Herzegovina",
-                     "asset":  "assets/flags/ba.png",
+                     "asset":  "assets/flags/ba.webp",
                      "startYear":  null
                  }
     },
@@ -225,7 +225,7 @@
         "flag":  {
                      "id":  "bw-current",
                      "name":  "Flag of Botswana",
-                     "asset":  "assets/flags/bw.png",
+                     "asset":  "assets/flags/bw.webp",
                      "startYear":  null
                  }
     },
@@ -235,7 +235,7 @@
         "flag":  {
                      "id":  "br-current",
                      "name":  "Flag of Brazil",
-                     "asset":  "assets/flags/br.png",
+                     "asset":  "assets/flags/br.webp",
                      "startYear":  null
                  }
     },
@@ -245,7 +245,7 @@
         "flag":  {
                      "id":  "bn-current",
                      "name":  "Flag of Brunei",
-                     "asset":  "assets/flags/bn.png",
+                     "asset":  "assets/flags/bn.webp",
                      "startYear":  null
                  }
     },
@@ -255,7 +255,7 @@
         "flag":  {
                      "id":  "bg-current",
                      "name":  "Flag of Bulgaria",
-                     "asset":  "assets/flags/bg.png",
+                     "asset":  "assets/flags/bg.webp",
                      "startYear":  null
                  }
     },
@@ -265,7 +265,7 @@
         "flag":  {
                      "id":  "bf-current",
                      "name":  "Flag of Burkina Faso",
-                     "asset":  "assets/flags/bf.png",
+                     "asset":  "assets/flags/bf.webp",
                      "startYear":  null
                  }
     },
@@ -275,7 +275,7 @@
         "flag":  {
                      "id":  "bi-current",
                      "name":  "Flag of Burundi",
-                     "asset":  "assets/flags/bi.png",
+                     "asset":  "assets/flags/bi.webp",
                      "startYear":  null
                  }
     },
@@ -285,7 +285,7 @@
         "flag":  {
                      "id":  "kh-current",
                      "name":  "Flag of Cambodia",
-                     "asset":  "assets/flags/kh.png",
+                     "asset":  "assets/flags/kh.webp",
                      "startYear":  null
                  }
     },
@@ -295,7 +295,7 @@
         "flag":  {
                      "id":  "cm-current",
                      "name":  "Flag of Cameroon",
-                     "asset":  "assets/flags/cm.png",
+                     "asset":  "assets/flags/cm.webp",
                      "startYear":  null
                  }
     },
@@ -305,7 +305,7 @@
         "flag":  {
                      "id":  "ca-current",
                      "name":  "Flag of Canada",
-                     "asset":  "assets/flags/ca.png",
+                     "asset":  "assets/flags/ca.webp",
                      "startYear":  null
                  }
     },
@@ -315,7 +315,7 @@
         "flag":  {
                      "id":  "cv-current",
                      "name":  "Flag of Cape Verde",
-                     "asset":  "assets/flags/cv.png",
+                     "asset":  "assets/flags/cv.webp",
                      "startYear":  null
                  }
     },
@@ -325,7 +325,7 @@
         "flag":  {
                      "id":  "cf-current",
                      "name":  "Flag of Central African Republic",
-                     "asset":  "assets/flags/cf.png",
+                     "asset":  "assets/flags/cf.webp",
                      "startYear":  null
                  }
     },
@@ -335,7 +335,7 @@
         "flag":  {
                      "id":  "td-current",
                      "name":  "Flag of Chad",
-                     "asset":  "assets/flags/td.png",
+                     "asset":  "assets/flags/td.webp",
                      "startYear":  null
                  }
     },
@@ -345,7 +345,7 @@
         "flag":  {
                      "id":  "cl-current",
                      "name":  "Flag of Chile",
-                     "asset":  "assets/flags/cl.png",
+                     "asset":  "assets/flags/cl.webp",
                      "startYear":  null
                  }
     },
@@ -355,7 +355,7 @@
         "flag":  {
                      "id":  "cn-current",
                      "name":  "Flag of China",
-                     "asset":  "assets/flags/cn.png",
+                     "asset":  "assets/flags/cn.webp",
                      "startYear":  null
                  }
     },
@@ -365,7 +365,7 @@
         "flag":  {
                      "id":  "co-current",
                      "name":  "Flag of Colombia",
-                     "asset":  "assets/flags/co.png",
+                     "asset":  "assets/flags/co.webp",
                      "startYear":  null
                  }
     },
@@ -375,7 +375,7 @@
         "flag":  {
                      "id":  "km-current",
                      "name":  "Flag of Comoros",
-                     "asset":  "assets/flags/km.png",
+                     "asset":  "assets/flags/km.webp",
                      "startYear":  null
                  }
     },
@@ -385,7 +385,7 @@
         "flag":  {
                      "id":  "cr-current",
                      "name":  "Flag of Costa Rica",
-                     "asset":  "assets/flags/cr.png",
+                     "asset":  "assets/flags/cr.webp",
                      "startYear":  null
                  }
     },
@@ -395,7 +395,7 @@
         "flag":  {
                      "id":  "hr-current",
                      "name":  "Flag of Croatia",
-                     "asset":  "assets/flags/hr.png",
+                     "asset":  "assets/flags/hr.webp",
                      "startYear":  null
                  }
     },
@@ -405,7 +405,7 @@
         "flag":  {
                      "id":  "cu-current",
                      "name":  "Flag of Cuba",
-                     "asset":  "assets/flags/cu.png",
+                     "asset":  "assets/flags/cu.webp",
                      "startYear":  null
                  }
     },
@@ -415,7 +415,7 @@
         "flag":  {
                      "id":  "cy-current",
                      "name":  "Flag of Cyprus",
-                     "asset":  "assets/flags/cy.png",
+                     "asset":  "assets/flags/cy.webp",
                      "startYear":  null
                  }
     },
@@ -425,7 +425,7 @@
         "flag":  {
                      "id":  "cz-current",
                      "name":  "Flag of Czechia",
-                     "asset":  "assets/flags/cz.png",
+                     "asset":  "assets/flags/cz.webp",
                      "startYear":  null
                  }
     },
@@ -435,7 +435,7 @@
         "flag":  {
                      "id":  "dk-current",
                      "name":  "Flag of Denmark",
-                     "asset":  "assets/flags/dk.png",
+                     "asset":  "assets/flags/dk.webp",
                      "startYear":  null
                  }
     },
@@ -445,7 +445,7 @@
         "flag":  {
                      "id":  "dj-current",
                      "name":  "Flag of Djibouti",
-                     "asset":  "assets/flags/dj.png",
+                     "asset":  "assets/flags/dj.webp",
                      "startYear":  null
                  }
     },
@@ -455,7 +455,7 @@
         "flag":  {
                      "id":  "dm-current",
                      "name":  "Flag of Dominica",
-                     "asset":  "assets/flags/dm.png",
+                     "asset":  "assets/flags/dm.webp",
                      "startYear":  null
                  }
     },
@@ -465,7 +465,7 @@
         "flag":  {
                      "id":  "do-current",
                      "name":  "Flag of Dominican Republic",
-                     "asset":  "assets/flags/do.png",
+                     "asset":  "assets/flags/do.webp",
                      "startYear":  null
                  }
     },
@@ -475,7 +475,7 @@
         "flag":  {
                      "id":  "cd-current",
                      "name":  "Flag of DR Congo",
-                     "asset":  "assets/flags/cd.png",
+                     "asset":  "assets/flags/cd.webp",
                      "startYear":  null
                  }
     },
@@ -485,7 +485,7 @@
         "flag":  {
                      "id":  "ec-current",
                      "name":  "Flag of Ecuador",
-                     "asset":  "assets/flags/ec.png",
+                     "asset":  "assets/flags/ec.webp",
                      "startYear":  null
                  }
     },
@@ -495,7 +495,7 @@
         "flag":  {
                      "id":  "eg-current",
                      "name":  "Flag of Egypt",
-                     "asset":  "assets/flags/eg.png",
+                     "asset":  "assets/flags/eg.webp",
                      "startYear":  null
                  }
     },
@@ -505,7 +505,7 @@
         "flag":  {
                      "id":  "sv-current",
                      "name":  "Flag of El Salvador",
-                     "asset":  "assets/flags/sv.png",
+                     "asset":  "assets/flags/sv.webp",
                      "startYear":  null
                  }
     },
@@ -515,7 +515,7 @@
         "flag":  {
                      "id":  "gq-current",
                      "name":  "Flag of Equatorial Guinea",
-                     "asset":  "assets/flags/gq.png",
+                     "asset":  "assets/flags/gq.webp",
                      "startYear":  null
                  }
     },
@@ -525,7 +525,7 @@
         "flag":  {
                      "id":  "er-current",
                      "name":  "Flag of Eritrea",
-                     "asset":  "assets/flags/er.png",
+                     "asset":  "assets/flags/er.webp",
                      "startYear":  null
                  }
     },
@@ -535,7 +535,7 @@
         "flag":  {
                      "id":  "ee-current",
                      "name":  "Flag of Estonia",
-                     "asset":  "assets/flags/ee.png",
+                     "asset":  "assets/flags/ee.webp",
                      "startYear":  null
                  }
     },
@@ -545,7 +545,7 @@
         "flag":  {
                      "id":  "sz-current",
                      "name":  "Flag of Eswatini",
-                     "asset":  "assets/flags/sz.png",
+                     "asset":  "assets/flags/sz.webp",
                      "startYear":  null
                  }
     },
@@ -555,7 +555,7 @@
         "flag":  {
                      "id":  "et-current",
                      "name":  "Flag of Ethiopia",
-                     "asset":  "assets/flags/et.png",
+                     "asset":  "assets/flags/et.webp",
                      "startYear":  null
                  }
     },
@@ -565,7 +565,7 @@
         "flag":  {
                      "id":  "fj-current",
                      "name":  "Flag of Fiji",
-                     "asset":  "assets/flags/fj.png",
+                     "asset":  "assets/flags/fj.webp",
                      "startYear":  null
                  }
     },
@@ -575,7 +575,7 @@
         "flag":  {
                      "id":  "fi-current",
                      "name":  "Flag of Finland",
-                     "asset":  "assets/flags/fi.png",
+                     "asset":  "assets/flags/fi.webp",
                      "startYear":  null
                  }
     },
@@ -585,7 +585,7 @@
         "flag":  {
                      "id":  "fr-current",
                      "name":  "Flag of France",
-                     "asset":  "assets/flags/fr.png",
+                     "asset":  "assets/flags/fr.webp",
                      "startYear":  null
                  }
     },
@@ -595,7 +595,7 @@
         "flag":  {
                      "id":  "ga-current",
                      "name":  "Flag of Gabon",
-                     "asset":  "assets/flags/ga.png",
+                     "asset":  "assets/flags/ga.webp",
                      "startYear":  null
                  }
     },
@@ -605,7 +605,7 @@
         "flag":  {
                      "id":  "gm-current",
                      "name":  "Flag of Gambia",
-                     "asset":  "assets/flags/gm.png",
+                     "asset":  "assets/flags/gm.webp",
                      "startYear":  null
                  }
     },
@@ -615,7 +615,7 @@
         "flag":  {
                      "id":  "ge-current",
                      "name":  "Flag of Georgia",
-                     "asset":  "assets/flags/ge.png",
+                     "asset":  "assets/flags/ge.webp",
                      "startYear":  null
                  }
     },
@@ -625,7 +625,7 @@
         "flag":  {
                      "id":  "de-current",
                      "name":  "Flag of Germany",
-                     "asset":  "assets/flags/de.png",
+                     "asset":  "assets/flags/de.webp",
                      "startYear":  null
                  }
     },
@@ -635,7 +635,7 @@
         "flag":  {
                      "id":  "gh-current",
                      "name":  "Flag of Ghana",
-                     "asset":  "assets/flags/gh.png",
+                     "asset":  "assets/flags/gh.webp",
                      "startYear":  null
                  }
     },
@@ -645,7 +645,7 @@
         "flag":  {
                      "id":  "gr-current",
                      "name":  "Flag of Greece",
-                     "asset":  "assets/flags/gr.png",
+                     "asset":  "assets/flags/gr.webp",
                      "startYear":  null
                  }
     },
@@ -655,7 +655,7 @@
         "flag":  {
                      "id":  "gd-current",
                      "name":  "Flag of Grenada",
-                     "asset":  "assets/flags/gd.png",
+                     "asset":  "assets/flags/gd.webp",
                      "startYear":  null
                  }
     },
@@ -665,7 +665,7 @@
         "flag":  {
                      "id":  "gt-current",
                      "name":  "Flag of Guatemala",
-                     "asset":  "assets/flags/gt.png",
+                     "asset":  "assets/flags/gt.webp",
                      "startYear":  null
                  }
     },
@@ -675,7 +675,7 @@
         "flag":  {
                      "id":  "gn-current",
                      "name":  "Flag of Guinea",
-                     "asset":  "assets/flags/gn.png",
+                     "asset":  "assets/flags/gn.webp",
                      "startYear":  null
                  }
     },
@@ -685,7 +685,7 @@
         "flag":  {
                      "id":  "gw-current",
                      "name":  "Flag of Guinea-Bissau",
-                     "asset":  "assets/flags/gw.png",
+                     "asset":  "assets/flags/gw.webp",
                      "startYear":  null
                  }
     },
@@ -695,7 +695,7 @@
         "flag":  {
                      "id":  "gy-current",
                      "name":  "Flag of Guyana",
-                     "asset":  "assets/flags/gy.png",
+                     "asset":  "assets/flags/gy.webp",
                      "startYear":  null
                  }
     },
@@ -705,7 +705,7 @@
         "flag":  {
                      "id":  "ht-current",
                      "name":  "Flag of Haiti",
-                     "asset":  "assets/flags/ht.png",
+                     "asset":  "assets/flags/ht.webp",
                      "startYear":  null
                  }
     },
@@ -715,7 +715,7 @@
         "flag":  {
                      "id":  "hn-current",
                      "name":  "Flag of Honduras",
-                     "asset":  "assets/flags/hn.png",
+                     "asset":  "assets/flags/hn.webp",
                      "startYear":  null
                  }
     },
@@ -725,7 +725,7 @@
         "flag":  {
                      "id":  "hu-current",
                      "name":  "Flag of Hungary",
-                     "asset":  "assets/flags/hu.png",
+                     "asset":  "assets/flags/hu.webp",
                      "startYear":  null
                  }
     },
@@ -735,7 +735,7 @@
         "flag":  {
                      "id":  "is-current",
                      "name":  "Flag of Iceland",
-                     "asset":  "assets/flags/is.png",
+                     "asset":  "assets/flags/is.webp",
                      "startYear":  null
                  }
     },
@@ -745,7 +745,7 @@
         "flag":  {
                      "id":  "in-current",
                      "name":  "Flag of India",
-                     "asset":  "assets/flags/in.png",
+                     "asset":  "assets/flags/in.webp",
                      "startYear":  null
                  }
     },
@@ -755,7 +755,7 @@
         "flag":  {
                      "id":  "id-current",
                      "name":  "Flag of Indonesia",
-                     "asset":  "assets/flags/id.png",
+                     "asset":  "assets/flags/id.webp",
                      "startYear":  null
                  }
     },
@@ -765,7 +765,7 @@
         "flag":  {
                      "id":  "ir-current",
                      "name":  "Flag of Iran",
-                     "asset":  "assets/flags/ir.png",
+                     "asset":  "assets/flags/ir.webp",
                      "startYear":  null
                  }
     },
@@ -775,7 +775,7 @@
         "flag":  {
                      "id":  "iq-current",
                      "name":  "Flag of Iraq",
-                     "asset":  "assets/flags/iq.png",
+                     "asset":  "assets/flags/iq.webp",
                      "startYear":  null
                  }
     },
@@ -785,7 +785,7 @@
         "flag":  {
                      "id":  "ie-current",
                      "name":  "Flag of Ireland",
-                     "asset":  "assets/flags/ie.png",
+                     "asset":  "assets/flags/ie.webp",
                      "startYear":  null
                  }
     },
@@ -795,7 +795,7 @@
         "flag":  {
                      "id":  "il-current",
                      "name":  "Flag of Israel",
-                     "asset":  "assets/flags/il.png",
+                     "asset":  "assets/flags/il.webp",
                      "startYear":  null
                  }
     },
@@ -805,7 +805,7 @@
         "flag":  {
                      "id":  "it-current",
                      "name":  "Flag of Italy",
-                     "asset":  "assets/flags/it.png",
+                     "asset":  "assets/flags/it.webp",
                      "startYear":  null
                  }
     },
@@ -815,7 +815,7 @@
         "flag":  {
                      "id":  "ci-current",
                      "name":  "Flag of Ivory Coast",
-                     "asset":  "assets/flags/ci.png",
+                     "asset":  "assets/flags/ci.webp",
                      "startYear":  null
                  }
     },
@@ -825,7 +825,7 @@
         "flag":  {
                      "id":  "jm-current",
                      "name":  "Flag of Jamaica",
-                     "asset":  "assets/flags/jm.png",
+                     "asset":  "assets/flags/jm.webp",
                      "startYear":  null
                  }
     },
@@ -835,7 +835,7 @@
         "flag":  {
                      "id":  "jp-1999",
                      "name":  "Flag of Japan",
-                     "asset":  "assets/flags/jp.png",
+                     "asset":  "assets/flags/jp.webp",
                      "startYear":  1999
                  }
     },
@@ -845,7 +845,7 @@
         "flag":  {
                      "id":  "jo-current",
                      "name":  "Flag of Jordan",
-                     "asset":  "assets/flags/jo.png",
+                     "asset":  "assets/flags/jo.webp",
                      "startYear":  null
                  }
     },
@@ -855,7 +855,7 @@
         "flag":  {
                      "id":  "kz-current",
                      "name":  "Flag of Kazakhstan",
-                     "asset":  "assets/flags/kz.png",
+                     "asset":  "assets/flags/kz.webp",
                      "startYear":  null
                  }
     },
@@ -865,7 +865,7 @@
         "flag":  {
                      "id":  "ke-current",
                      "name":  "Flag of Kenya",
-                     "asset":  "assets/flags/ke.png",
+                     "asset":  "assets/flags/ke.webp",
                      "startYear":  null
                  }
     },
@@ -875,7 +875,7 @@
         "flag":  {
                      "id":  "ki-current",
                      "name":  "Flag of Kiribati",
-                     "asset":  "assets/flags/ki.png",
+                     "asset":  "assets/flags/ki.webp",
                      "startYear":  null
                  }
     },
@@ -885,7 +885,7 @@
         "flag":  {
                      "id":  "kw-current",
                      "name":  "Flag of Kuwait",
-                     "asset":  "assets/flags/kw.png",
+                     "asset":  "assets/flags/kw.webp",
                      "startYear":  null
                  }
     },
@@ -895,7 +895,7 @@
         "flag":  {
                      "id":  "kg-current",
                      "name":  "Flag of Kyrgyzstan",
-                     "asset":  "assets/flags/kg.png",
+                     "asset":  "assets/flags/kg.webp",
                      "startYear":  null
                  }
     },
@@ -905,7 +905,7 @@
         "flag":  {
                      "id":  "la-current",
                      "name":  "Flag of Laos",
-                     "asset":  "assets/flags/la.png",
+                     "asset":  "assets/flags/la.webp",
                      "startYear":  null
                  }
     },
@@ -915,7 +915,7 @@
         "flag":  {
                      "id":  "lv-current",
                      "name":  "Flag of Latvia",
-                     "asset":  "assets/flags/lv.png",
+                     "asset":  "assets/flags/lv.webp",
                      "startYear":  null
                  }
     },
@@ -925,7 +925,7 @@
         "flag":  {
                      "id":  "lb-current",
                      "name":  "Flag of Lebanon",
-                     "asset":  "assets/flags/lb.png",
+                     "asset":  "assets/flags/lb.webp",
                      "startYear":  null
                  }
     },
@@ -935,7 +935,7 @@
         "flag":  {
                      "id":  "ls-current",
                      "name":  "Flag of Lesotho",
-                     "asset":  "assets/flags/ls.png",
+                     "asset":  "assets/flags/ls.webp",
                      "startYear":  null
                  }
     },
@@ -945,7 +945,7 @@
         "flag":  {
                      "id":  "lr-current",
                      "name":  "Flag of Liberia",
-                     "asset":  "assets/flags/lr.png",
+                     "asset":  "assets/flags/lr.webp",
                      "startYear":  null
                  }
     },
@@ -955,7 +955,7 @@
         "flag":  {
                      "id":  "ly-current",
                      "name":  "Flag of Libya",
-                     "asset":  "assets/flags/ly.png",
+                     "asset":  "assets/flags/ly.webp",
                      "startYear":  null
                  }
     },
@@ -965,7 +965,7 @@
         "flag":  {
                      "id":  "li-current",
                      "name":  "Flag of Liechtenstein",
-                     "asset":  "assets/flags/li.png",
+                     "asset":  "assets/flags/li.webp",
                      "startYear":  null
                  }
     },
@@ -975,7 +975,7 @@
         "flag":  {
                      "id":  "lt-current",
                      "name":  "Flag of Lithuania",
-                     "asset":  "assets/flags/lt.png",
+                     "asset":  "assets/flags/lt.webp",
                      "startYear":  null
                  }
     },
@@ -985,7 +985,7 @@
         "flag":  {
                      "id":  "lu-current",
                      "name":  "Flag of Luxembourg",
-                     "asset":  "assets/flags/lu.png",
+                     "asset":  "assets/flags/lu.webp",
                      "startYear":  null
                  }
     },
@@ -995,7 +995,7 @@
         "flag":  {
                      "id":  "mg-current",
                      "name":  "Flag of Madagascar",
-                     "asset":  "assets/flags/mg.png",
+                     "asset":  "assets/flags/mg.webp",
                      "startYear":  null
                  }
     },
@@ -1005,7 +1005,7 @@
         "flag":  {
                      "id":  "mw-current",
                      "name":  "Flag of Malawi",
-                     "asset":  "assets/flags/mw.png",
+                     "asset":  "assets/flags/mw.webp",
                      "startYear":  null
                  }
     },
@@ -1015,7 +1015,7 @@
         "flag":  {
                      "id":  "my-current",
                      "name":  "Flag of Malaysia",
-                     "asset":  "assets/flags/my.png",
+                     "asset":  "assets/flags/my.webp",
                      "startYear":  null
                  }
     },
@@ -1025,7 +1025,7 @@
         "flag":  {
                      "id":  "mv-current",
                      "name":  "Flag of Maldives",
-                     "asset":  "assets/flags/mv.png",
+                     "asset":  "assets/flags/mv.webp",
                      "startYear":  null
                  }
     },
@@ -1035,7 +1035,7 @@
         "flag":  {
                      "id":  "ml-current",
                      "name":  "Flag of Mali",
-                     "asset":  "assets/flags/ml.png",
+                     "asset":  "assets/flags/ml.webp",
                      "startYear":  null
                  }
     },
@@ -1045,7 +1045,7 @@
         "flag":  {
                      "id":  "mt-current",
                      "name":  "Flag of Malta",
-                     "asset":  "assets/flags/mt.png",
+                     "asset":  "assets/flags/mt.webp",
                      "startYear":  null
                  }
     },
@@ -1055,7 +1055,7 @@
         "flag":  {
                      "id":  "mh-current",
                      "name":  "Flag of Marshall Islands",
-                     "asset":  "assets/flags/mh.png",
+                     "asset":  "assets/flags/mh.webp",
                      "startYear":  null
                  }
     },
@@ -1065,7 +1065,7 @@
         "flag":  {
                      "id":  "mr-current",
                      "name":  "Flag of Mauritania",
-                     "asset":  "assets/flags/mr.png",
+                     "asset":  "assets/flags/mr.webp",
                      "startYear":  null
                  }
     },
@@ -1075,7 +1075,7 @@
         "flag":  {
                      "id":  "mu-current",
                      "name":  "Flag of Mauritius",
-                     "asset":  "assets/flags/mu.png",
+                     "asset":  "assets/flags/mu.webp",
                      "startYear":  null
                  }
     },
@@ -1085,7 +1085,7 @@
         "flag":  {
                      "id":  "mx-current",
                      "name":  "Flag of Mexico",
-                     "asset":  "assets/flags/mx.png",
+                     "asset":  "assets/flags/mx.webp",
                      "startYear":  null
                  }
     },
@@ -1095,7 +1095,7 @@
         "flag":  {
                      "id":  "fm-current",
                      "name":  "Flag of Micronesia",
-                     "asset":  "assets/flags/fm.png",
+                     "asset":  "assets/flags/fm.webp",
                      "startYear":  null
                  }
     },
@@ -1105,7 +1105,7 @@
         "flag":  {
                      "id":  "md-current",
                      "name":  "Flag of Moldova",
-                     "asset":  "assets/flags/md.png",
+                     "asset":  "assets/flags/md.webp",
                      "startYear":  null
                  }
     },
@@ -1115,7 +1115,7 @@
         "flag":  {
                      "id":  "mc-current",
                      "name":  "Flag of Monaco",
-                     "asset":  "assets/flags/mc.png",
+                     "asset":  "assets/flags/mc.webp",
                      "startYear":  null
                  }
     },
@@ -1125,7 +1125,7 @@
         "flag":  {
                      "id":  "mn-current",
                      "name":  "Flag of Mongolia",
-                     "asset":  "assets/flags/mn.png",
+                     "asset":  "assets/flags/mn.webp",
                      "startYear":  null
                  }
     },
@@ -1135,7 +1135,7 @@
         "flag":  {
                      "id":  "me-current",
                      "name":  "Flag of Montenegro",
-                     "asset":  "assets/flags/me.png",
+                     "asset":  "assets/flags/me.webp",
                      "startYear":  null
                  }
     },
@@ -1145,7 +1145,7 @@
         "flag":  {
                      "id":  "ma-current",
                      "name":  "Flag of Morocco",
-                     "asset":  "assets/flags/ma.png",
+                     "asset":  "assets/flags/ma.webp",
                      "startYear":  null
                  }
     },
@@ -1155,7 +1155,7 @@
         "flag":  {
                      "id":  "mz-current",
                      "name":  "Flag of Mozambique",
-                     "asset":  "assets/flags/mz.png",
+                     "asset":  "assets/flags/mz.webp",
                      "startYear":  null
                  }
     },
@@ -1165,7 +1165,7 @@
         "flag":  {
                      "id":  "mm-current",
                      "name":  "Flag of Myanmar",
-                     "asset":  "assets/flags/mm.png",
+                     "asset":  "assets/flags/mm.webp",
                      "startYear":  null
                  }
     },
@@ -1175,7 +1175,7 @@
         "flag":  {
                      "id":  "na-current",
                      "name":  "Flag of Namibia",
-                     "asset":  "assets/flags/na.png",
+                     "asset":  "assets/flags/na.webp",
                      "startYear":  null
                  }
     },
@@ -1185,7 +1185,7 @@
         "flag":  {
                      "id":  "nr-current",
                      "name":  "Flag of Nauru",
-                     "asset":  "assets/flags/nr.png",
+                     "asset":  "assets/flags/nr.webp",
                      "startYear":  null
                  }
     },
@@ -1195,7 +1195,7 @@
         "flag":  {
                      "id":  "np-current",
                      "name":  "Flag of Nepal",
-                     "asset":  "assets/flags/np.png",
+                     "asset":  "assets/flags/np.webp",
                      "startYear":  null
                  }
     },
@@ -1205,7 +1205,7 @@
         "flag":  {
                      "id":  "nl-current",
                      "name":  "Flag of Netherlands",
-                     "asset":  "assets/flags/nl.png",
+                     "asset":  "assets/flags/nl.webp",
                      "startYear":  null
                  }
     },
@@ -1215,7 +1215,7 @@
         "flag":  {
                      "id":  "nz-current",
                      "name":  "Flag of New Zealand",
-                     "asset":  "assets/flags/nz.png",
+                     "asset":  "assets/flags/nz.webp",
                      "startYear":  null
                  }
     },
@@ -1225,7 +1225,7 @@
         "flag":  {
                      "id":  "ni-current",
                      "name":  "Flag of Nicaragua",
-                     "asset":  "assets/flags/ni.png",
+                     "asset":  "assets/flags/ni.webp",
                      "startYear":  null
                  }
     },
@@ -1235,7 +1235,7 @@
         "flag":  {
                      "id":  "ne-current",
                      "name":  "Flag of Niger",
-                     "asset":  "assets/flags/ne.png",
+                     "asset":  "assets/flags/ne.webp",
                      "startYear":  null
                  }
     },
@@ -1245,7 +1245,7 @@
         "flag":  {
                      "id":  "ng-current",
                      "name":  "Flag of Nigeria",
-                     "asset":  "assets/flags/ng.png",
+                     "asset":  "assets/flags/ng.webp",
                      "startYear":  null
                  }
     },
@@ -1255,7 +1255,7 @@
         "flag":  {
                      "id":  "kp-current",
                      "name":  "Flag of North Korea",
-                     "asset":  "assets/flags/kp.png",
+                     "asset":  "assets/flags/kp.webp",
                      "startYear":  null
                  }
     },
@@ -1265,7 +1265,7 @@
         "flag":  {
                      "id":  "mk-current",
                      "name":  "Flag of North Macedonia",
-                     "asset":  "assets/flags/mk.png",
+                     "asset":  "assets/flags/mk.webp",
                      "startYear":  null
                  }
     },
@@ -1275,7 +1275,7 @@
         "flag":  {
                      "id":  "no-current",
                      "name":  "Flag of Norway",
-                     "asset":  "assets/flags/no.png",
+                     "asset":  "assets/flags/no.webp",
                      "startYear":  null
                  }
     },
@@ -1285,7 +1285,7 @@
         "flag":  {
                      "id":  "om-current",
                      "name":  "Flag of Oman",
-                     "asset":  "assets/flags/om.png",
+                     "asset":  "assets/flags/om.webp",
                      "startYear":  null
                  }
     },
@@ -1295,7 +1295,7 @@
         "flag":  {
                      "id":  "pk-current",
                      "name":  "Flag of Pakistan",
-                     "asset":  "assets/flags/pk.png",
+                     "asset":  "assets/flags/pk.webp",
                      "startYear":  null
                  }
     },
@@ -1305,7 +1305,7 @@
         "flag":  {
                      "id":  "pw-current",
                      "name":  "Flag of Palau",
-                     "asset":  "assets/flags/pw.png",
+                     "asset":  "assets/flags/pw.webp",
                      "startYear":  null
                  }
     },
@@ -1315,7 +1315,7 @@
         "flag":  {
                      "id":  "ps-current",
                      "name":  "Flag of Palestine",
-                     "asset":  "assets/flags/ps.png",
+                     "asset":  "assets/flags/ps.webp",
                      "startYear":  null
                  }
     },
@@ -1325,7 +1325,7 @@
         "flag":  {
                      "id":  "pa-current",
                      "name":  "Flag of Panama",
-                     "asset":  "assets/flags/pa.png",
+                     "asset":  "assets/flags/pa.webp",
                      "startYear":  null
                  }
     },
@@ -1335,7 +1335,7 @@
         "flag":  {
                      "id":  "pg-current",
                      "name":  "Flag of Papua New Guinea",
-                     "asset":  "assets/flags/pg.png",
+                     "asset":  "assets/flags/pg.webp",
                      "startYear":  null
                  }
     },
@@ -1345,7 +1345,7 @@
         "flag":  {
                      "id":  "py-current",
                      "name":  "Flag of Paraguay",
-                     "asset":  "assets/flags/py.png",
+                     "asset":  "assets/flags/py.webp",
                      "startYear":  null
                  }
     },
@@ -1355,7 +1355,7 @@
         "flag":  {
                      "id":  "pe-1950",
                      "name":  "Flag of Peru",
-                     "asset":  "assets/flags/pe.png",
+                     "asset":  "assets/flags/pe.webp",
                      "startYear":  1950
                  }
     },
@@ -1365,7 +1365,7 @@
         "flag":  {
                      "id":  "ph-current",
                      "name":  "Flag of Philippines",
-                     "asset":  "assets/flags/ph.png",
+                     "asset":  "assets/flags/ph.webp",
                      "startYear":  null
                  }
     },
@@ -1375,7 +1375,7 @@
         "flag":  {
                      "id":  "pl-current",
                      "name":  "Flag of Poland",
-                     "asset":  "assets/flags/pl.png",
+                     "asset":  "assets/flags/pl.webp",
                      "startYear":  null
                  }
     },
@@ -1385,7 +1385,7 @@
         "flag":  {
                      "id":  "pt-current",
                      "name":  "Flag of Portugal",
-                     "asset":  "assets/flags/pt.png",
+                     "asset":  "assets/flags/pt.webp",
                      "startYear":  null
                  }
     },
@@ -1395,7 +1395,7 @@
         "flag":  {
                      "id":  "qa-current",
                      "name":  "Flag of Qatar",
-                     "asset":  "assets/flags/qa.png",
+                     "asset":  "assets/flags/qa.webp",
                      "startYear":  null
                  }
     },
@@ -1405,7 +1405,7 @@
         "flag":  {
                      "id":  "cg-current",
                      "name":  "Flag of Republic of the Congo",
-                     "asset":  "assets/flags/cg.png",
+                     "asset":  "assets/flags/cg.webp",
                      "startYear":  null
                  }
     },
@@ -1415,7 +1415,7 @@
         "flag":  {
                      "id":  "ro-current",
                      "name":  "Flag of Romania",
-                     "asset":  "assets/flags/ro.png",
+                     "asset":  "assets/flags/ro.webp",
                      "startYear":  null
                  }
     },
@@ -1425,7 +1425,7 @@
         "flag":  {
                      "id":  "ru-current",
                      "name":  "Flag of Russia",
-                     "asset":  "assets/flags/ru.png",
+                     "asset":  "assets/flags/ru.webp",
                      "startYear":  null
                  }
     },
@@ -1435,7 +1435,7 @@
         "flag":  {
                      "id":  "rw-current",
                      "name":  "Flag of Rwanda",
-                     "asset":  "assets/flags/rw.png",
+                     "asset":  "assets/flags/rw.webp",
                      "startYear":  null
                  }
     },
@@ -1445,7 +1445,7 @@
         "flag":  {
                      "id":  "kn-current",
                      "name":  "Flag of Saint Kitts and Nevis",
-                     "asset":  "assets/flags/kn.png",
+                     "asset":  "assets/flags/kn.webp",
                      "startYear":  null
                  }
     },
@@ -1455,7 +1455,7 @@
         "flag":  {
                      "id":  "lc-current",
                      "name":  "Flag of Saint Lucia",
-                     "asset":  "assets/flags/lc.png",
+                     "asset":  "assets/flags/lc.webp",
                      "startYear":  null
                  }
     },
@@ -1465,7 +1465,7 @@
         "flag":  {
                      "id":  "vc-current",
                      "name":  "Flag of Saint Vincent and the Grenadines",
-                     "asset":  "assets/flags/vc.png",
+                     "asset":  "assets/flags/vc.webp",
                      "startYear":  null
                  }
     },
@@ -1475,7 +1475,7 @@
         "flag":  {
                      "id":  "ws-current",
                      "name":  "Flag of Samoa",
-                     "asset":  "assets/flags/ws.png",
+                     "asset":  "assets/flags/ws.webp",
                      "startYear":  null
                  }
     },
@@ -1485,7 +1485,7 @@
         "flag":  {
                      "id":  "sm-current",
                      "name":  "Flag of San Marino",
-                     "asset":  "assets/flags/sm.png",
+                     "asset":  "assets/flags/sm.webp",
                      "startYear":  null
                  }
     },
@@ -1495,7 +1495,7 @@
         "flag":  {
                      "id":  "st-current",
                      "name":  "Flag of Sao Tome and Principe",
-                     "asset":  "assets/flags/st.png",
+                     "asset":  "assets/flags/st.webp",
                      "startYear":  null
                  }
     },
@@ -1505,7 +1505,7 @@
         "flag":  {
                      "id":  "sa-current",
                      "name":  "Flag of Saudi Arabia",
-                     "asset":  "assets/flags/sa.png",
+                     "asset":  "assets/flags/sa.webp",
                      "startYear":  null
                  }
     },
@@ -1515,7 +1515,7 @@
         "flag":  {
                      "id":  "sn-current",
                      "name":  "Flag of Senegal",
-                     "asset":  "assets/flags/sn.png",
+                     "asset":  "assets/flags/sn.webp",
                      "startYear":  null
                  }
     },
@@ -1525,7 +1525,7 @@
         "flag":  {
                      "id":  "rs-current",
                      "name":  "Flag of Serbia",
-                     "asset":  "assets/flags/rs.png",
+                     "asset":  "assets/flags/rs.webp",
                      "startYear":  null
                  }
     },
@@ -1535,7 +1535,7 @@
         "flag":  {
                      "id":  "sc-current",
                      "name":  "Flag of Seychelles",
-                     "asset":  "assets/flags/sc.png",
+                     "asset":  "assets/flags/sc.webp",
                      "startYear":  null
                  }
     },
@@ -1545,7 +1545,7 @@
         "flag":  {
                      "id":  "sl-current",
                      "name":  "Flag of Sierra Leone",
-                     "asset":  "assets/flags/sl.png",
+                     "asset":  "assets/flags/sl.webp",
                      "startYear":  null
                  }
     },
@@ -1555,7 +1555,7 @@
         "flag":  {
                      "id":  "sg-current",
                      "name":  "Flag of Singapore",
-                     "asset":  "assets/flags/sg.png",
+                     "asset":  "assets/flags/sg.webp",
                      "startYear":  null
                  }
     },
@@ -1565,7 +1565,7 @@
         "flag":  {
                      "id":  "sk-current",
                      "name":  "Flag of Slovakia",
-                     "asset":  "assets/flags/sk.png",
+                     "asset":  "assets/flags/sk.webp",
                      "startYear":  null
                  }
     },
@@ -1575,7 +1575,7 @@
         "flag":  {
                      "id":  "si-current",
                      "name":  "Flag of Slovenia",
-                     "asset":  "assets/flags/si.png",
+                     "asset":  "assets/flags/si.webp",
                      "startYear":  null
                  }
     },
@@ -1585,7 +1585,7 @@
         "flag":  {
                      "id":  "sb-current",
                      "name":  "Flag of Solomon Islands",
-                     "asset":  "assets/flags/sb.png",
+                     "asset":  "assets/flags/sb.webp",
                      "startYear":  null
                  }
     },
@@ -1595,7 +1595,7 @@
         "flag":  {
                      "id":  "so-current",
                      "name":  "Flag of Somalia",
-                     "asset":  "assets/flags/so.png",
+                     "asset":  "assets/flags/so.webp",
                      "startYear":  null
                  }
     },
@@ -1605,7 +1605,7 @@
         "flag":  {
                      "id":  "za-current",
                      "name":  "Flag of South Africa",
-                     "asset":  "assets/flags/za.png",
+                     "asset":  "assets/flags/za.webp",
                      "startYear":  null
                  }
     },
@@ -1615,7 +1615,7 @@
         "flag":  {
                      "id":  "kr-current",
                      "name":  "Flag of South Korea",
-                     "asset":  "assets/flags/kr.png",
+                     "asset":  "assets/flags/kr.webp",
                      "startYear":  null
                  }
     },
@@ -1625,7 +1625,7 @@
         "flag":  {
                      "id":  "ss-current",
                      "name":  "Flag of South Sudan",
-                     "asset":  "assets/flags/ss.png",
+                     "asset":  "assets/flags/ss.webp",
                      "startYear":  null
                  }
     },
@@ -1635,7 +1635,7 @@
         "flag":  {
                      "id":  "es-1981",
                      "name":  "Flag of Spain",
-                     "asset":  "assets/flags/es.png",
+                     "asset":  "assets/flags/es.webp",
                      "startYear":  1981
                  }
     },
@@ -1645,7 +1645,7 @@
         "flag":  {
                      "id":  "lk-current",
                      "name":  "Flag of Sri Lanka",
-                     "asset":  "assets/flags/lk.png",
+                     "asset":  "assets/flags/lk.webp",
                      "startYear":  null
                  }
     },
@@ -1655,7 +1655,7 @@
         "flag":  {
                      "id":  "sd-current",
                      "name":  "Flag of Sudan",
-                     "asset":  "assets/flags/sd.png",
+                     "asset":  "assets/flags/sd.webp",
                      "startYear":  null
                  }
     },
@@ -1665,7 +1665,7 @@
         "flag":  {
                      "id":  "sr-current",
                      "name":  "Flag of Suriname",
-                     "asset":  "assets/flags/sr.png",
+                     "asset":  "assets/flags/sr.webp",
                      "startYear":  null
                  }
     },
@@ -1675,7 +1675,7 @@
         "flag":  {
                      "id":  "se-current",
                      "name":  "Flag of Sweden",
-                     "asset":  "assets/flags/se.png",
+                     "asset":  "assets/flags/se.webp",
                      "startYear":  null
                  }
     },
@@ -1685,7 +1685,7 @@
         "flag":  {
                      "id":  "ch-current",
                      "name":  "Flag of Switzerland",
-                     "asset":  "assets/flags/ch.png",
+                     "asset":  "assets/flags/ch.webp",
                      "startYear":  null
                  }
     },
@@ -1695,7 +1695,7 @@
         "flag":  {
                      "id":  "sy-current",
                      "name":  "Flag of Syria",
-                     "asset":  "assets/flags/sy.png",
+                     "asset":  "assets/flags/sy.webp",
                      "startYear":  null
                  }
     },
@@ -1705,7 +1705,7 @@
         "flag":  {
                      "id":  "tj-current",
                      "name":  "Flag of Tajikistan",
-                     "asset":  "assets/flags/tj.png",
+                     "asset":  "assets/flags/tj.webp",
                      "startYear":  null
                  }
     },
@@ -1715,7 +1715,7 @@
         "flag":  {
                      "id":  "tz-current",
                      "name":  "Flag of Tanzania",
-                     "asset":  "assets/flags/tz.png",
+                     "asset":  "assets/flags/tz.webp",
                      "startYear":  null
                  }
     },
@@ -1725,7 +1725,7 @@
         "flag":  {
                      "id":  "th-current",
                      "name":  "Flag of Thailand",
-                     "asset":  "assets/flags/th.png",
+                     "asset":  "assets/flags/th.webp",
                      "startYear":  null
                  }
     },
@@ -1735,7 +1735,7 @@
         "flag":  {
                      "id":  "tl-current",
                      "name":  "Flag of Timor-Leste",
-                     "asset":  "assets/flags/tl.png",
+                     "asset":  "assets/flags/tl.webp",
                      "startYear":  null
                  }
     },
@@ -1745,7 +1745,7 @@
         "flag":  {
                      "id":  "tg-current",
                      "name":  "Flag of Togo",
-                     "asset":  "assets/flags/tg.png",
+                     "asset":  "assets/flags/tg.webp",
                      "startYear":  null
                  }
     },
@@ -1755,7 +1755,7 @@
         "flag":  {
                      "id":  "to-current",
                      "name":  "Flag of Tonga",
-                     "asset":  "assets/flags/to.png",
+                     "asset":  "assets/flags/to.webp",
                      "startYear":  null
                  }
     },
@@ -1765,7 +1765,7 @@
         "flag":  {
                      "id":  "tt-current",
                      "name":  "Flag of Trinidad and Tobago",
-                     "asset":  "assets/flags/tt.png",
+                     "asset":  "assets/flags/tt.webp",
                      "startYear":  null
                  }
     },
@@ -1775,7 +1775,7 @@
         "flag":  {
                      "id":  "tn-current",
                      "name":  "Flag of Tunisia",
-                     "asset":  "assets/flags/tn.png",
+                     "asset":  "assets/flags/tn.webp",
                      "startYear":  null
                  }
     },
@@ -1785,7 +1785,7 @@
         "flag":  {
                      "id":  "tr-current",
                      "name":  "Flag of Turkey",
-                     "asset":  "assets/flags/tr.png",
+                     "asset":  "assets/flags/tr.webp",
                      "startYear":  null
                  }
     },
@@ -1795,7 +1795,7 @@
         "flag":  {
                      "id":  "tm-current",
                      "name":  "Flag of Turkmenistan",
-                     "asset":  "assets/flags/tm.png",
+                     "asset":  "assets/flags/tm.webp",
                      "startYear":  null
                  }
     },
@@ -1805,7 +1805,7 @@
         "flag":  {
                      "id":  "tv-current",
                      "name":  "Flag of Tuvalu",
-                     "asset":  "assets/flags/tv.png",
+                     "asset":  "assets/flags/tv.webp",
                      "startYear":  null
                  }
     },
@@ -1815,7 +1815,7 @@
         "flag":  {
                      "id":  "ug-current",
                      "name":  "Flag of Uganda",
-                     "asset":  "assets/flags/ug.png",
+                     "asset":  "assets/flags/ug.webp",
                      "startYear":  null
                  }
     },
@@ -1825,7 +1825,7 @@
         "flag":  {
                      "id":  "ua-current",
                      "name":  "Flag of Ukraine",
-                     "asset":  "assets/flags/ua.png",
+                     "asset":  "assets/flags/ua.webp",
                      "startYear":  null
                  }
     },
@@ -1835,7 +1835,7 @@
         "flag":  {
                      "id":  "ae-current",
                      "name":  "Flag of United Arab Emirates",
-                     "asset":  "assets/flags/ae.png",
+                     "asset":  "assets/flags/ae.webp",
                      "startYear":  null
                  }
     },
@@ -1845,7 +1845,7 @@
         "flag":  {
                      "id":  "gb-current",
                      "name":  "Flag of United Kingdom",
-                     "asset":  "assets/flags/gb.png",
+                     "asset":  "assets/flags/gb.webp",
                      "startYear":  null
                  }
     },
@@ -1855,7 +1855,7 @@
         "flag":  {
                      "id":  "us-1960",
                      "name":  "Flag of United States",
-                     "asset":  "assets/flags/us.png",
+                     "asset":  "assets/flags/us.webp",
                      "startYear":  1960
                  }
     },
@@ -1865,7 +1865,7 @@
         "flag":  {
                      "id":  "uy-current",
                      "name":  "Flag of Uruguay",
-                     "asset":  "assets/flags/uy.png",
+                     "asset":  "assets/flags/uy.webp",
                      "startYear":  null
                  }
     },
@@ -1875,7 +1875,7 @@
         "flag":  {
                      "id":  "uz-current",
                      "name":  "Flag of Uzbekistan",
-                     "asset":  "assets/flags/uz.png",
+                     "asset":  "assets/flags/uz.webp",
                      "startYear":  null
                  }
     },
@@ -1885,7 +1885,7 @@
         "flag":  {
                      "id":  "vu-current",
                      "name":  "Flag of Vanuatu",
-                     "asset":  "assets/flags/vu.png",
+                     "asset":  "assets/flags/vu.webp",
                      "startYear":  null
                  }
     },
@@ -1895,7 +1895,7 @@
         "flag":  {
                      "id":  "va-current",
                      "name":  "Flag of Vatican City",
-                     "asset":  "assets/flags/va.png",
+                     "asset":  "assets/flags/va.webp",
                      "startYear":  null
                  }
     },
@@ -1905,7 +1905,7 @@
         "flag":  {
                      "id":  "ve-2006",
                      "name":  "Flag of Venezuela",
-                     "asset":  "assets/flags/ve.png",
+                     "asset":  "assets/flags/ve.webp",
                      "startYear":  2006
                  }
     },
@@ -1915,7 +1915,7 @@
         "flag":  {
                      "id":  "vn-current",
                      "name":  "Flag of Vietnam",
-                     "asset":  "assets/flags/vn.png",
+                     "asset":  "assets/flags/vn.webp",
                      "startYear":  null
                  }
     },
@@ -1925,7 +1925,7 @@
         "flag":  {
                      "id":  "ye-current",
                      "name":  "Flag of Yemen",
-                     "asset":  "assets/flags/ye.png",
+                     "asset":  "assets/flags/ye.webp",
                      "startYear":  null
                  }
     },
@@ -1935,7 +1935,7 @@
         "flag":  {
                      "id":  "zm-current",
                      "name":  "Flag of Zambia",
-                     "asset":  "assets/flags/zm.png",
+                     "asset":  "assets/flags/zm.webp",
                      "startYear":  null
                  }
     },
@@ -1945,7 +1945,7 @@
         "flag":  {
                      "id":  "zw-current",
                      "name":  "Flag of Zimbabwe",
-                     "asset":  "assets/flags/zw.png",
+                     "asset":  "assets/flags/zw.webp",
                      "startYear":  null
                  }
     }

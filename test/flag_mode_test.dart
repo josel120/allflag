@@ -115,7 +115,7 @@ void main() {
         final flag = tester.widget<Image>(find.byType(Image));
         expect(flag.fit, BoxFit.contain);
         expect(flag.color, isNull);
-        expect((flag.image as AssetImage).assetName, 'assets/flags/us.png');
+        expect((flag.image as AssetImage).assetName, 'assets/flags/us.webp');
         await rotate(tester, false);
         expect(platform.calls, [false, true, false]);
         expect(platform.awake, isFalse);

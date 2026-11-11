@@ -30,7 +30,7 @@ automated accessibility checks. See [release readiness and physical QA](docs/REL
 
 - 195 countries: Flagpedia's complete sovereign-state list (193 UN members,
   Palestine and Vatican City), adding 190 to the original five.
-- Bundled English/Spanish country names and flag PNGs: fully functional offline.
+- Bundled English/Spanish country names and lossless WebP flags: fully functional offline.
 - Alphabetical, lazily built list with small decoded thumbnails.
 - Persistent Favorites and up to five Recent countries, stored locally by stable generic flag ID.
 - Favorites, Recent, then All Countries when search is empty; filtered catalog only during search.
@@ -59,7 +59,7 @@ No state-management framework or new runtime dependency is introduced.
       ui/home_screen.dart             Search, selection and orientation
       ui/flag_screen.dart             Proportional fullscreen image
     assets/data/countries.json        Offline 195-country metadata
-    assets/flags/                    PNGs and license notice
+    assets/flags/                    lossless WebP flags and license notice
     docs/COUNTRY_CATALOG.md           Scope and maintenance
     docs/flag-assets.json            Asset URLs, dimensions and checksums
     test/                           Domain, assets and widget behavior

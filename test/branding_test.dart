@@ -176,7 +176,7 @@ void main() {
         expect(find.text('AllFlag'), findsNothing);
         final flag = tester.widget<Image>(find.byType(Image));
         expect(flag.fit, BoxFit.contain);
-        expect((flag.image as AssetImage).assetName, 'assets/flags/ca.png');
+        expect((flag.image as AssetImage).assetName, 'assets/flags/ca.webp');
         await screenshot(tester, 'landscape-${brightness.name}');
         expect(tester.takeException(), isNull);
       },
