@@ -86,7 +86,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
     expect(find.byType(ListTile).evaluate().length, lessThan(195));
     await tester.enterText(find.byType(TextField), '  pErU  ');
@@ -103,7 +103,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
   });
 
@@ -186,7 +186,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
   });
 
@@ -208,7 +208,7 @@ void main() {
             .widget<ListView>(find.byType(ListView))
             .childrenDelegate
             .estimatedChildCount,
-        entry.value.length + 1,
+        entry.value.length + 2,
       );
       for (final name in entry.value) {
         expect(find.widgetWithText(ListTile, name), findsOneWidget);
@@ -221,7 +221,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
   });
 
@@ -367,6 +367,9 @@ void main() {
       await tester.tap(find.byTooltip('Clear search'));
       await tester.pumpAndSettle();
       expect(find.text('Recent'), findsOneWidget);
+      // Room for the whole Recent group below the selection card.
+      tester.view.physicalSize = const Size(400, 1400);
+      await tester.pumpAndSettle();
       final visibleRecents = tester
           .widgetList<ListTile>(find.byType(ListTile))
           .where(

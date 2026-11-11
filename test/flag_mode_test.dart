@@ -221,6 +221,8 @@ void main() {
               .selected,
           isTrue,
         );
+        await tester.drag(find.byType(Scrollable).first, const Offset(0, 3000));
+        await tester.pumpAndSettle();
         expect(
           tester.widget<TextField>(find.byType(TextField)).controller!.text,
           'CH',

@@ -24,6 +24,7 @@ class HomeIntro extends StatelessWidget {
     required this.onRetrySave,
     required this.selected,
     required this.noResults,
+    this.onSupport,
   });
 
   final FlagPreferences preferences;
@@ -38,6 +39,7 @@ class HomeIntro extends StatelessWidget {
   final VoidCallback onRetrySave;
   final FlagItem? selected;
   final bool noResults;
+  final VoidCallback? onSupport;
 
   @override
   Widget build(BuildContext context) {
@@ -51,6 +53,7 @@ class HomeIntro extends StatelessWidget {
           language: preferences.language,
           onLanguageChanged: onLanguageChanged,
           onThemeChanged: onThemeChanged,
+          onSupport: onSupport,
         ),
         const SizedBox(height: 20),
         Text(l10n.chooseCountry, style: theme.textTheme.bodyLarge),

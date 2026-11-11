@@ -379,6 +379,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Could not open the privacy policy. Try again later.'**
   String get privacyPolicyError;
+
+  /// No description provided for @supportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Support the developer'**
+  String get supportTitle;
+
+  /// No description provided for @supportIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'AllFlag is free and shows no ads anywhere else. If you want to help, you can choose to watch a short ad.'**
+  String get supportIntro;
+
+  /// No description provided for @supportReward.
+  ///
+  /// In en, this message translates to:
+  /// **'Your reward: a thank-you message and +1 on your supporter badge. Nothing in the app is locked.'**
+  String get supportReward;
+
+  /// No description provided for @supportWatchAd.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch ad'**
+  String get supportWatchAd;
+
+  /// No description provided for @supportOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Support'**
+  String get supportOpen;
+
+  /// No description provided for @supportCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{You haven\'t supported yet} =1{You\'ve supported once} other{You\'ve supported {count} times}}'**
+  String supportCount(int count);
+
+  /// No description provided for @supportPreparing.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing…'**
+  String get supportPreparing;
+
+  /// No description provided for @supportLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading ad…'**
+  String get supportLoading;
+
+  /// No description provided for @supportUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'No ad is available right now. Please try again later.'**
+  String get supportUnavailable;
+
+  /// No description provided for @supportOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re offline. Ads need an internet connection; everything else in AllFlag works offline.'**
+  String get supportOffline;
+
+  /// No description provided for @supportError.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong with the ad.'**
+  String get supportError;
+
+  /// No description provided for @supportConsentDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Ads can\'t be shown with your current privacy choices. You can change them in Privacy options.'**
+  String get supportConsentDenied;
+
+  /// No description provided for @supportThanks.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you! Your support keeps AllFlag going.'**
+  String get supportThanks;
+
+  /// No description provided for @supportNoReward.
+  ///
+  /// In en, this message translates to:
+  /// **'The ad was closed before it finished, so there is no reward this time.'**
+  String get supportNoReward;
+
+  /// No description provided for @supportAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch another ad'**
+  String get supportAgain;
+
+  /// No description provided for @privacyOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy options'**
+  String get privacyOptions;
+
+  /// No description provided for @supportNetworkNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Ads are only loaded on this screen, after you open it.'**
+  String get supportNetworkNote;
 }
 
 class _AppLocalizationsDelegate

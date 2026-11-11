@@ -7,6 +7,9 @@ import 'ui/home_screen.dart';
 import 'ui/brand_theme.dart';
 import 'l10n/generated/app_localizations.dart';
 import 'platform/flag_mode_platform.dart';
+import 'privacy_policy.dart' as privacy;
+import 'support/support_ad_service.dart';
+import 'support/supporter_store.dart';
 
 /// Reads saved choices before the first frame so the app opens directly in the
 /// saved theme and language. Never blocks startup on storage problems: the home
@@ -29,6 +32,10 @@ class AllFlagApp extends StatefulWidget {
     required this.preferencesStore,
     this.initialPreferences,
     this.flagModePlatform = const NativeFlagModePlatform(),
+    this.adServiceFactory,
+    this.supporterStore,
+    this.privacyPolicyUrl = privacy.privacyPolicyUrl,
+    this.openUrl = privacy.openExternalUrl,
   });
   final FlagCatalog repository;
   final FlagPreferencesStore preferencesStore;
@@ -36,6 +43,10 @@ class AllFlagApp extends StatefulWidget {
   /// Saved choices read before `runApp`; null falls back to System.
   final FlagPreferences? initialPreferences;
   final FlagModePlatform flagModePlatform;
+  final SupportAdService Function()? adServiceFactory;
+  final SupporterStore? supporterStore;
+  final String privacyPolicyUrl;
+  final Future<bool> Function(Uri) openUrl;
 
   @override
   State<AllFlagApp> createState() => _AllFlagAppState();
@@ -76,6 +87,10 @@ class _AllFlagAppState extends State<AllFlagApp> {
       repository: widget.repository,
       preferencesStore: widget.preferencesStore,
       flagModePlatform: widget.flagModePlatform,
+      adServiceFactory: widget.adServiceFactory,
+      supporterStore: widget.supporterStore,
+      privacyPolicyUrl: widget.privacyPolicyUrl,
+      openUrl: widget.openUrl,
       onLanguageChanged: (language) {
         if (mounted && _language != language) {
           setState(() => _language = language);

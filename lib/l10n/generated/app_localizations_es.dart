@@ -370,4 +370,71 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get privacyPolicyError =>
       'No se pudo abrir la política de privacidad. Inténtalo más tarde.';
+
+  @override
+  String get supportTitle => 'Apoya al desarrollador';
+
+  @override
+  String get supportIntro =>
+      'AllFlag es gratis y no muestra anuncios en ninguna otra parte. Si quieres ayudar, puedes elegir ver un anuncio corto.';
+
+  @override
+  String get supportReward =>
+      'Tu recompensa: un mensaje de agradecimiento y +1 en tu insignia de apoyo. Nada de la app está bloqueado.';
+
+  @override
+  String get supportWatchAd => 'Ver anuncio';
+
+  @override
+  String get supportOpen => 'Apoyar';
+
+  @override
+  String supportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Has apoyado $count veces',
+      one: 'Has apoyado 1 vez',
+      zero: 'Aún no has apoyado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supportPreparing => 'Preparando…';
+
+  @override
+  String get supportLoading => 'Cargando anuncio…';
+
+  @override
+  String get supportUnavailable =>
+      'No hay anuncios disponibles ahora. Inténtalo más tarde.';
+
+  @override
+  String get supportOffline =>
+      'Sin conexión. Los anuncios necesitan internet; el resto de AllFlag funciona sin conexión.';
+
+  @override
+  String get supportError => 'Algo salió mal con el anuncio.';
+
+  @override
+  String get supportConsentDenied =>
+      'Con tus opciones de privacidad actuales no se pueden mostrar anuncios. Puedes cambiarlas en Opciones de privacidad.';
+
+  @override
+  String get supportThanks => '¡Gracias! Tu apoyo mantiene vivo AllFlag.';
+
+  @override
+  String get supportNoReward =>
+      'El anuncio se cerró antes de terminar, así que esta vez no hay recompensa.';
+
+  @override
+  String get supportAgain => 'Ver otro anuncio';
+
+  @override
+  String get privacyOptions => 'Opciones de privacidad';
+
+  @override
+  String get supportNetworkNote =>
+      'Los anuncios solo se cargan en esta pantalla, después de abrirla.';
 }

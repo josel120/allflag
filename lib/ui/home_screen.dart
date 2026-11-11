@@ -11,8 +11,13 @@ import 'brand_theme.dart';
 import '../l10n/generated/app_localizations.dart';
 import '../l10n/flag_localization.dart';
 import '../platform/flag_mode_platform.dart';
+import '../privacy_policy.dart' as privacy;
+import '../support/support_ad_service.dart';
+import '../support/support_screen.dart';
+import '../support/supporter_store.dart';
 import 'flag_mode_controller.dart';
 import 'home/country_row.dart';
+import 'home/home_footer.dart';
 import 'home/home_intro.dart';
 import 'home/home_rows.dart';
 import 'home/home_states.dart';
@@ -25,12 +30,25 @@ class HomeScreen extends StatefulWidget {
     this.onThemeChanged,
     this.onLanguageChanged,
     this.flagModePlatform = const NativeFlagModePlatform(),
+    this.adServiceFactory,
+    this.supporterStore,
+    this.privacyPolicyUrl = privacy.privacyPolicyUrl,
+    this.openUrl = privacy.openExternalUrl,
   });
   final FlagCatalog repository;
   final FlagPreferencesStore preferencesStore;
   final ValueChanged<ThemePreference>? onThemeChanged;
   final ValueChanged<LanguagePreference>? onLanguageChanged;
   final FlagModePlatform flagModePlatform;
+
+  /// Creates the ads SDK wrapper only when Support is opened (lazy, offline
+  /// until then). Tests inject a fake.
+  final SupportAdService Function()? adServiceFactory;
+  final SupporterStore? supporterStore;
+
+  /// Empty hides the link.
+  final String privacyPolicyUrl;
+  final Future<bool> Function(Uri) openUrl;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -51,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   Future<void> _saveQueue = Future.value();
   int _saveRevision = 0;
   bool _saveFailed = false;
+  bool _supportOpen = false;
 
   Future<List<FlagItem>> _load() async {
     final items = await widget.repository.loadFlags();
@@ -100,6 +119,28 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       _preferences = _preferences.select(item.id);
     });
     _persist();
+  }
+
+  Future<void> _openSupport() async {
+    FocusManager.instance.primaryFocus?.unfocus();
+    setState(() => _supportOpen = true);
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => SupportScreen(
+          adService: (widget.adServiceFactory ?? GoogleSupportAdService.new)(),
+          supporterStore:
+              widget.supporterStore ?? SharedPreferencesSupporterStore(),
+        ),
+      ),
+    );
+    if (mounted) setState(() => _supportOpen = false);
+  }
+
+  Future<void> _openPrivacyPolicy() async {
+    final messenger = ScaffoldMessenger.of(context);
+    final error = AppLocalizations.of(context).privacyPolicyError;
+    final opened = await widget.openUrl(Uri.parse(widget.privacyPolicyUrl));
+    if (!opened) messenger.showSnackBar(SnackBar(content: Text(error)));
   }
 
   void _toggleFavorite(FlagItem item) {
@@ -182,7 +223,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     final landscape =
         MediaQuery.orientationOf(context) == Orientation.landscape;
-    final fullscreen = (landscape || _quickPresentation) && _selected != null;
+    // Never enter Flag Mode underneath the support screen.
+    final fullscreen =
+        !_supportOpen && (landscape || _quickPresentation) && _selected != null;
     if (_fullscreen != fullscreen) {
       _fullscreen = fullscreen;
       _schedulePlatformSync();
@@ -248,10 +291,19 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             return ListView.builder(
               padding: const EdgeInsets.all(BrandTokens.pagePadding),
               keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-              itemCount: rows.length + 1,
+              itemCount: rows.length + 2,
               itemBuilder: (context, index) {
+                if (index == rows.length + 1) {
+                  return HomeFooter(
+                    onSupport: _openSupport,
+                    onPrivacyPolicy: widget.privacyPolicyUrl.isEmpty
+                        ? null
+                        : _openPrivacyPolicy,
+                  );
+                }
                 if (index == 0) {
                   return HomeIntro(
+                    onSupport: _openSupport,
                     preferences: _preferences,
                     search: _search,
                     onSearchChanged: () => setState(() {}),

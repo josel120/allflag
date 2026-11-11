@@ -30,6 +30,12 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <!-- AdMob App ID: Google's test ID except in release builds given
+             ALLFLAG_ADMOB_APP_ID (see android/app/build.gradle.kts). Ads are
+             only requested from the opt-in "Support the developer" screen. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${admobAppId}" />
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

@@ -2,6 +2,7 @@ import java.util.Properties
 import java.io.StringReader
 import java.nio.charset.CodingErrorAction
 import java.nio.ByteBuffer
+import java.util.Base64
 
 plugins {
     id("com.android.application")
@@ -45,6 +46,24 @@ gradle.taskGraph.whenReady {
     }
 }
 
+// Flutter forwards --dart-define(-from-file) values as base64 "dart-defines".
+// The same private admob.json therefore configures Dart and the manifest.
+val dartDefines: Map<String, String> =
+    (project.findProperty("dart-defines") as String?)
+        ?.split(",")
+        ?.mapNotNull { encoded ->
+            runCatching { String(Base64.getDecoder().decode(encoded)) }.getOrNull()
+        }
+        ?.mapNotNull { entry ->
+            entry.split("=", limit = 2).takeIf { it.size == 2 }?.let { it[0] to it[1] }
+        }
+        ?.toMap()
+        ?: emptyMap()
+// Google's official sample App ID. Debug/profile always use it.
+val testAdMobAppId = "ca-app-pub-3940256099942544~3347511713"
+val releaseAdMobAppId = dartDefines["ALLFLAG_ADMOB_APP_ID"]
+    ?.takeIf { Regex("^ca-app-pub-\\d{16}~\\d{10}$").matches(it) }
+
 android {
     namespace = "com.allflag.allflag"
     compileSdk = flutter.compileSdkVersion
@@ -68,6 +87,7 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        manifestPlaceholders["admobAppId"] = testAdMobAppId
     }
 
     signingConfigs {
@@ -84,6 +104,8 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.findByName("release")
+            // TODO(owner): real AdMob App ID via admob.json; test ID until then.
+            manifestPlaceholders["admobAppId"] = releaseAdMobAppId ?: testAdMobAppId
             // Explicit (Flutter also defaults to R8): shrink, obfuscate Java/Kotlin
             // and drop unused resources. Mapping goes into the AAB for Play.
             isMinifyEnabled = true

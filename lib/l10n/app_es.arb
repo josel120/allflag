@@ -61,5 +61,22 @@
                         },
     "loadingCountries":  "Cargando países…",
     "privacyPolicy":  "Política de privacidad",
-    "privacyPolicyError":  "No se pudo abrir la política de privacidad. Inténtalo más tarde."
+    "privacyPolicyError":  "No se pudo abrir la política de privacidad. Inténtalo más tarde.",
+    "supportTitle":  "Apoya al desarrollador",
+    "supportIntro":  "AllFlag es gratis y no muestra anuncios en ninguna otra parte. Si quieres ayudar, puedes elegir ver un anuncio corto.",
+    "supportReward":  "Tu recompensa: un mensaje de agradecimiento y +1 en tu insignia de apoyo. Nada de la app está bloqueado.",
+    "supportWatchAd":  "Ver anuncio",
+    "supportOpen":  "Apoyar",
+    "supportCount":  "{count, plural, =0{Aún no has apoyado} =1{Has apoyado 1 vez} other{Has apoyado {count} veces}}",
+    "supportPreparing":  "Preparando…",
+    "supportLoading":  "Cargando anuncio…",
+    "supportUnavailable":  "No hay anuncios disponibles ahora. Inténtalo más tarde.",
+    "supportOffline":  "Sin conexión. Los anuncios necesitan internet; el resto de AllFlag funciona sin conexión.",
+    "supportError":  "Algo salió mal con el anuncio.",
+    "supportConsentDenied":  "Con tus opciones de privacidad actuales no se pueden mostrar anuncios. Puedes cambiarlas en Opciones de privacidad.",
+    "supportThanks":  "¡Gracias! Tu apoyo mantiene vivo AllFlag.",
+    "supportNoReward":  "El anuncio se cerró antes de terminar, así que esta vez no hay recompensa.",
+    "supportAgain":  "Ver otro anuncio",
+    "privacyOptions":  "Opciones de privacidad",
+    "supportNetworkNote":  "Los anuncios solo se cargan en esta pantalla, después de abrirla."
 }

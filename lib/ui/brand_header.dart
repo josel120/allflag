@@ -10,12 +10,16 @@ class BrandHeader extends StatelessWidget {
     this.onThemeChanged,
     this.language = LanguagePreference.system,
     this.onLanguageChanged,
+    this.onSupport,
   });
 
   final ThemePreference theme;
   final ValueChanged<ThemePreference>? onThemeChanged;
   final LanguagePreference language;
   final ValueChanged<LanguagePreference>? onLanguageChanged;
+
+  /// Opens the optional rewarded-ad support screen.
+  final VoidCallback? onSupport;
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +45,16 @@ class BrandHeader extends StatelessWidget {
         label: themeLabel,
         itemIcon: themeIcon,
       ),
+      if (onSupport != null)
+        IconButton(
+          key: const ValueKey('support-button'),
+          tooltip: l10n.supportTitle,
+          icon: Icon(
+            Icons.volunteer_activism_outlined,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+          onPressed: onSupport,
+        ),
       _PreferenceMenu<LanguagePreference>(
         tooltip: l10n.language,
         icon: Icons.language,

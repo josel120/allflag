@@ -60,3 +60,6 @@ app.*.map.json
 
 # Local IDE upgrade-assistant leftovers; never part of the app.
 /.github/modernize/
+
+# Private AdMob IDs passed with --dart-define-from-file (never commit).
+admob.json
