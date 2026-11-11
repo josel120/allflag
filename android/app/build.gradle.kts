@@ -84,6 +84,18 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.findByName("release")
+            // Explicit (Flutter also defaults to R8): shrink, obfuscate Java/Kotlin
+            // and drop unused resources. Mapping goes into the AAB for Play.
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
+            // Full native symbols in the AAB so Play can symbolicate crashes/ANRs.
+            ndk {
+                debugSymbolLevel = "FULL"
+            }
         }
     }
 }
