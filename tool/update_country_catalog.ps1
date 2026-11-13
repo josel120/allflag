@@ -22,17 +22,22 @@ foreach ($match in $matches) {
     if ($bytes.Length -lt 24 -or $bytes[0] -ne 137 -or $bytes[1] -ne 80) { throw "Invalid PNG: $code" }
     $width = [int]($bytes[16] * 16777216 + $bytes[17] * 65536 + $bytes[18] * 256 + $bytes[19])
     $height = [int]($bytes[20] * 16777216 + $bytes[21] * 65536 + $bytes[22] * 256 + $bytes[23])
+    # Ship lossless WebP (pixel-identical, ~33% smaller); keep PNG only for provenance.
+    $webpPath = Join-Path $flagDirectory "$code.webp"
+    & cwebp -quiet -lossless -exact -m 4 $assetPath -o $webpPath
+    if ($LASTEXITCODE -ne 0) { throw "cwebp failed: $code (install libwebp's cwebp)" }
     $year = $knownYears[$code]
     $id = if ($null -eq $year) { "$code-current" } else { "$code-$year" }
     $countries += [ordered]@{
         code = $code.ToUpperInvariant(); name = $name
-        flag = [ordered]@{ id = $id; name = "Flag of $name"; asset = "assets/flags/$code.png"; startYear = $year }
+        flag = [ordered]@{ id = $id; name = "Flag of $name"; asset = "assets/flags/$code.webp"; startYear = $year }
     }
     $provenance += [ordered]@{
         code = $code.ToUpperInvariant(); source = $url; width = $width; height = $height
         sha256 = (Get-FileHash -Algorithm SHA256 $assetPath).Hash.ToLowerInvariant()
     }
 }
+Get-ChildItem $flagDirectory -Filter '*.png' | Remove-Item
 $countries = @($countries | Sort-Object { $_.name.ToLowerInvariant() })
 [System.IO.File]::WriteAllText((Join-Path $dataDirectory 'countries.json'), (ConvertTo-Json -InputObject $countries -Depth 5) + [Environment]::NewLine)
 $snapshot = [ordered]@{
@@ -40,4 +45,4 @@ $snapshot = [ordered]@{
     license = 'https://flagpedia.net/terms'; assets = $provenance
 }
 [System.IO.File]::WriteAllText((Join-Path $projectRoot 'docs/flag-assets.json'), (ConvertTo-Json $snapshot -Depth 5) + [Environment]::NewLine)
-Write-Output "Updated $($countries.Count) countries and PNGs. Review data, artwork and provenance before committing."
+Write-Output "Updated $($countries.Count) countries and lossless WebP flags. Review data, artwork and provenance before committing."

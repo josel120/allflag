@@ -139,7 +139,7 @@ void main() {
         );
         expect(
           tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,
-          brightness == Brightness.dark ? ThemeMode.dark : ThemeMode.light,
+          ThemeMode.system,
         );
         await screenshot(tester, 'home-${brightness.name}');
         await tester.enterText(find.byType(TextField), 'Atlantis');
@@ -176,7 +176,7 @@ void main() {
         expect(find.text('AllFlag'), findsNothing);
         final flag = tester.widget<Image>(find.byType(Image));
         expect(flag.fit, BoxFit.contain);
-        expect((flag.image as AssetImage).assetName, 'assets/flags/ca.png');
+        expect((flag.image as AssetImage).assetName, 'assets/flags/ca.webp');
         await screenshot(tester, 'landscape-${brightness.name}');
         expect(tester.takeException(), isNull);
       },
@@ -211,6 +211,8 @@ void main() {
             150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.byType(ListTile));
+          await tester.pumpAndSettle();
           await tester.pumpAndSettle();
           expect(find.widgetWithText(ListTile, name), findsOneWidget);
           expect(
@@ -244,6 +246,8 @@ void main() {
             -150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.byType(TextField));
+          await tester.pumpAndSettle();
           await tester.pumpAndSettle();
         }
         if (width == 320 && scale == 2) {

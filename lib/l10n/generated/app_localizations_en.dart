@@ -354,4 +354,86 @@ class AppLocalizationsEn extends AppLocalizations {
   String setQuickFlagLabel(String country) {
     return 'Set $country as Quick Flag';
   }
+
+  @override
+  String themeMenuLabel(String mode) {
+    return 'Theme: $mode';
+  }
+
+  @override
+  String get loadingCountries => 'Loading countries…';
+
+  @override
+  String get privacyPolicy => 'Privacy policy';
+
+  @override
+  String get privacyPolicyError =>
+      'Could not open the privacy policy. Try again later.';
+
+  @override
+  String get supportTitle => 'Support the developer';
+
+  @override
+  String get supportIntro =>
+      'AllFlag is free and shows no ads anywhere else. If you want to help, you can choose to watch a short ad.';
+
+  @override
+  String get supportReward =>
+      'Your reward: a thank-you message and +1 on your supporter badge. Nothing in the app is locked.';
+
+  @override
+  String get supportWatchAd => 'Watch ad';
+
+  @override
+  String get supportOpen => 'Support';
+
+  @override
+  String supportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'You\'ve supported $count times',
+      one: 'You\'ve supported once',
+      zero: 'You haven\'t supported yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supportPreparing => 'Preparing…';
+
+  @override
+  String get supportLoading => 'Loading ad…';
+
+  @override
+  String get supportUnavailable =>
+      'No ad is available right now. Please try again later.';
+
+  @override
+  String get supportOffline =>
+      'You\'re offline. Ads need an internet connection; everything else in AllFlag works offline.';
+
+  @override
+  String get supportError => 'Something went wrong with the ad.';
+
+  @override
+  String get supportConsentDenied =>
+      'Ads can\'t be shown with your current privacy choices. You can change them in Privacy options.';
+
+  @override
+  String get supportThanks => 'Thank you! Your support keeps AllFlag going.';
+
+  @override
+  String get supportNoReward =>
+      'The ad was closed before it finished, so there is no reward this time.';
+
+  @override
+  String get supportAgain => 'Watch another ad';
+
+  @override
+  String get privacyOptions => 'Privacy options';
+
+  @override
+  String get supportNetworkNote =>
+      'Ads are only loaded on this screen, after you open it.';
 }

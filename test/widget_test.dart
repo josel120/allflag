@@ -86,7 +86,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
     expect(find.byType(ListTile).evaluate().length, lessThan(195));
     await tester.enterText(find.byType(TextField), '  pErU  ');
@@ -103,7 +103,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
   });
 
@@ -141,7 +141,7 @@ void main() {
       expect(find.byType(AppBar), findsNothing);
       final image = tester.widget<Image>(find.byType(Image));
       expect(image.fit, BoxFit.contain);
-      expect((image.image as AssetImage).assetName, 'assets/flags/pe.png');
+      expect((image.image as AssetImage).assetName, 'assets/flags/pe.webp');
       expect(modes, contains('SystemUiMode.immersiveSticky'));
       tester.view.physicalSize = const Size(400, 900);
       await tester.pumpAndSettle();
@@ -186,7 +186,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
   });
 
@@ -208,7 +208,7 @@ void main() {
             .widget<ListView>(find.byType(ListView))
             .childrenDelegate
             .estimatedChildCount,
-        entry.value.length + 1,
+        entry.value.length + 2,
       );
       for (final name in entry.value) {
         expect(find.widgetWithText(ListTile, name), findsOneWidget);
@@ -221,7 +221,7 @@ void main() {
           .widget<ListView>(find.byType(ListView))
           .childrenDelegate
           .estimatedChildCount,
-      197,
+      198,
     );
   });
 
@@ -234,6 +234,8 @@ void main() {
       500,
       scrollable: find.byType(Scrollable).first,
     );
+    await tester.ensureVisible(find.byKey(const ValueKey('country:ZW')));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('country:ZW')));
     await tester.pumpAndSettle();
     tester.view.physicalSize = const Size(900, 400);
@@ -365,6 +367,9 @@ void main() {
       await tester.tap(find.byTooltip('Clear search'));
       await tester.pumpAndSettle();
       expect(find.text('Recent'), findsOneWidget);
+      // Room for the whole Recent group below the selection card.
+      tester.view.physicalSize = const Size(400, 1400);
+      await tester.pumpAndSettle();
       final visibleRecents = tester
           .widgetList<ListTile>(find.byType(ListTile))
           .where(

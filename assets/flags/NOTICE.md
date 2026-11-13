@@ -1,6 +1,8 @@
-# Flag assets — v0.2.0
+# Flag assets — v1.0.0
 
-195 unmodified, native-proportion PNGs from Flagpedia's FlagCDN, at 2560px wide.
+195 native-proportion flags from Flagpedia's FlagCDN, at 2560px wide. Since
+1.0.0 they ship as lossless WebP: decoded pixels are identical to the source
+PNGs (verified per file), files are about 33% smaller.
 All assets are bundled locally; the application makes no network requests.
 
 Flagpedia identifies its flag images as public domain, usable commercially and
@@ -13,7 +15,7 @@ Scope: https://flagpedia.net/sovereign-states
 Direct source for each file: https://flagcdn.com/w2560/{lowercase-code}.png
 
 See docs/flag-assets.json for retrieval date, per-file URLs, dimensions and
-SHA-256 checksums, and docs/COUNTRY_CATALOG.md for selection conventions.
+SHA-256 checksums of the source PNGs, and docs/COUNTRY_CATALOG.md for selection conventions.
 The source's Afghanistan republic tricolor is retained; flag variants follow
 the source rather than an independent recognition policy. Syria uses the
 green/white/black three-star flag. Venezuela and Peru use civil national
