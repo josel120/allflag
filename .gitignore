@@ -57,3 +57,5 @@ app.*.map.json
 
 # Generated Gradle output
 /android/build/
+.env
+admob.json
