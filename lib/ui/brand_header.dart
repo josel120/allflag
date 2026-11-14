@@ -10,6 +10,7 @@ class BrandHeader extends StatelessWidget {
     this.onThemeChanged,
     this.language = LanguagePreference.system,
     this.onLanguageChanged,
+    this.onSupport,
   });
 
   final ThemePreference theme;
@@ -17,33 +18,43 @@ class BrandHeader extends StatelessWidget {
   final LanguagePreference language;
   final ValueChanged<LanguagePreference>? onLanguageChanged;
 
+  /// Opens the optional rewarded-ad support screen.
+  final VoidCallback? onSupport;
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    String themeLabel(ThemePreference value) => switch (value) {
+      ThemePreference.system => l10n.system,
+      ThemePreference.light => l10n.light,
+      ThemePreference.dark => l10n.dark,
+    };
+    IconData themeIcon(ThemePreference value) => switch (value) {
+      ThemePreference.system => Icons.brightness_auto_outlined,
+      ThemePreference.light => Icons.light_mode_outlined,
+      ThemePreference.dark => Icons.dark_mode_outlined,
+    };
     final controls = [
-      IconButton(
-        key: const ValueKey('appearance-toggle'),
-        tooltip: theme == ThemePreference.dark
-            ? l10n.switchToLightMode
-            : l10n.switchToDarkMode,
-        constraints: const BoxConstraints(minWidth: 48, minHeight: 48),
-        icon: Icon(
-          theme == ThemePreference.dark
-              ? Icons.light_mode_outlined
-              : Icons.dark_mode_outlined,
-          color: Theme.of(context).colorScheme.onSurfaceVariant,
-          semanticLabel: theme == ThemePreference.dark
-              ? l10n.switchToLightMode
-              : l10n.switchToDarkMode,
-        ),
-        onPressed: onThemeChanged == null
-            ? null
-            : () => onThemeChanged!(
-                theme == ThemePreference.dark
-                    ? ThemePreference.light
-                    : ThemePreference.dark,
-              ),
+      _PreferenceMenu<ThemePreference>(
+        key: const ValueKey('theme-menu'),
+        tooltip: l10n.themeMenuLabel(themeLabel(theme)),
+        icon: themeIcon(theme),
+        selected: theme,
+        values: ThemePreference.values,
+        onSelected: onThemeChanged,
+        label: themeLabel,
+        itemIcon: themeIcon,
       ),
+      if (onSupport != null)
+        IconButton(
+          key: const ValueKey('support-button'),
+          tooltip: l10n.supportTitle,
+          icon: Icon(
+            Icons.volunteer_activism_outlined,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+          onPressed: onSupport,
+        ),
       _PreferenceMenu<LanguagePreference>(
         tooltip: l10n.language,
         icon: Icons.language,
@@ -79,10 +90,7 @@ class BrandHeader extends StatelessWidget {
               children: [
                 Text(
                   l10n.appName,
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: -0.8,
-                  ),
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
                 Text(
                   l10n.tagline,
@@ -106,12 +114,14 @@ class BrandHeader extends StatelessWidget {
 
 class _PreferenceMenu<T> extends StatelessWidget {
   const _PreferenceMenu({
+    super.key,
     required this.tooltip,
     required this.icon,
     required this.selected,
     required this.values,
     required this.label,
     this.onSelected,
+    this.itemIcon,
   });
   final String tooltip;
   final IconData icon;
@@ -119,6 +129,7 @@ class _PreferenceMenu<T> extends StatelessWidget {
   final List<T> values;
   final String Function(T) label;
   final ValueChanged<T>? onSelected;
+  final IconData Function(T)? itemIcon;
 
   @override
   Widget build(BuildContext context) => PopupMenuButton<T>(
@@ -141,6 +152,14 @@ class _PreferenceMenu<T> extends StatelessWidget {
                       : null,
                 ),
                 const SizedBox(width: 12),
+                if (itemIcon != null) ...[
+                  Icon(
+                    itemIcon!(value),
+                    size: 20,
+                    color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  ),
+                  const SizedBox(width: 12),
+                ],
                 Flexible(child: Text(label(value))),
               ],
             ),

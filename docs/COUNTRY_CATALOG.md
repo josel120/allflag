@@ -29,13 +29,13 @@ unchanged. New IDs use the stable country code plus '-current'; any later
 historical-data release must review design identifiers and adoption periods.
 
 The list creates rows on demand and decodes thumbnails to their display width.
-Fullscreen uses the original 2560px-wide PNG with BoxFit.contain, retaining
+Fullscreen uses the 2560px-wide lossless WebP (pixel-identical to the source PNG) with BoxFit.contain, retaining
 native proportions and transparency, including square flags and Nepal's shape.
 No orientation/system-UI behavior or Android signing configuration was changed.
 
 ## Source snapshot and maintenance
 
-docs/flag-assets.json records the retrieval date, each asset URL, PNG width and
+docs/flag-assets.json records the retrieval date, each source PNG URL, width and
 height, and SHA-256 checksum. The source's conventions are retained, including
 Afghanistan's republic tricolor as served by FlagCDN, Syria's green/white/black
 three-star design, and Venezuela/Peru's civil national variants. This release

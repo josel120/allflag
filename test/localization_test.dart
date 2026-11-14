@@ -1,3 +1,5 @@
+import 'support/theme_menu.dart';
+
 import 'package:allflag/data/country_flag_catalog.dart';
 
 import 'support/flag_fixtures.dart';
@@ -308,7 +310,7 @@ void main() {
     (tester) async {
       final disk = MemoryStorage();
       await launch(tester, store: SharedPreferencesFlagStore(storage: disk));
-      await tester.tap(find.byTooltip('Switch to dark mode'));
+      await chooseTheme(tester, 'Dark');
       await tester.pumpAndSettle();
       await language(tester, 'Español');
       expect(
@@ -335,7 +337,7 @@ void main() {
         expect(activeLocale(tester), 'es');
         expect(tester.takeException(), isNull);
       }
-      await tester.tap(find.byTooltip('Cambiar a modo claro'));
+      await chooseTheme(tester, 'Claro');
       await tester.pumpAndSettle();
       expect(activeLocale(tester), 'es');
       expect(
@@ -420,7 +422,7 @@ void main() {
       expect(find.byType(Text), findsNothing);
       final flag = tester.widget<Image>(find.byType(Image));
       expect(flag.fit, BoxFit.contain);
-      expect((flag.image as AssetImage).assetName, 'assets/flags/de.png');
+      expect((flag.image as AssetImage).assetName, 'assets/flags/de.webp');
       expect(flag.semanticLabel, 'Bandera de Alemania');
       expect(
         tester.widget<Scaffold>(find.byType(Scaffold)).backgroundColor,
@@ -451,12 +453,16 @@ void main() {
             150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.text('Todos los países'));
+          await tester.pumpAndSettle();
           expect(find.text('Todos los países'), findsOneWidget);
           await tester.scrollUntilVisible(
             find.byType(TextField),
             -150,
             scrollable: find.byType(Scrollable).first,
           );
+          await tester.ensureVisible(find.byType(TextField));
+          await tester.pumpAndSettle();
           await tester.pumpAndSettle();
           for (final name in [
             'República Centroafricana',
@@ -472,6 +478,8 @@ void main() {
             );
             await tester.ensureVisible(find.byType(ListTile));
             await tester.pumpAndSettle();
+            await tester.ensureVisible(find.byType(ListTile));
+            await tester.pumpAndSettle();
             await tester.tap(
               find.descendant(
                 of: find.byType(ListTile),
@@ -484,6 +492,8 @@ void main() {
               150,
               scrollable: find.byType(Scrollable).first,
             );
+            await tester.ensureVisible(find.byType(ListTile));
+            await tester.pumpAndSettle();
             final title = tester.getRect(
               find.descendant(
                 of: find.byType(ListTile),
@@ -511,6 +521,8 @@ void main() {
               -150,
               scrollable: find.byType(Scrollable).first,
             );
+            await tester.ensureVisible(find.byType(TextField));
+            await tester.pumpAndSettle();
             await tester.pumpAndSettle();
           }
           await language(tester, 'English');

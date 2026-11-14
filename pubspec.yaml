@@ -1,16 +1,18 @@
-﻿name: allflag
+name: allflag
 description: Turn your phone into the flag you want to show right now.
 publish_to: 'none'
-version: 0.9.0+11
+version: 1.0.0+12
 environment:
   sdk: ^3.13.2
 dependencies:
   flutter_localizations:
     sdk: flutter
-  intl: any
+  intl: ^0.20.3 # Matches flutter_localizations on Flutter 3.47.2.
   shared_preferences: ^2.5.5
   flutter:
     sdk: flutter
+  google_mobile_ads: ^9.2.0
+  url_launcher: ^6.3.3
 dev_dependencies:
   flutter_test:
     sdk: flutter

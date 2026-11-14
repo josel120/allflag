@@ -15,7 +15,7 @@ import 'support/recording_flag_mode_platform.dart';
 
 final item = FlagItem(
   id: FlagId(FlagCategory('fixture'), 'long-name'),
-  asset: 'assets/flags/vc.png',
+  asset: 'assets/flags/vc.webp',
   defaultName: 'Saint Vincent and the Grenadines',
   localizedNames: {'es': 'San Vicente y las Granadinas'},
 );
@@ -63,6 +63,8 @@ Future<void> reveal(WidgetTester tester, Finder finder) async {
     100,
     scrollable: find.byType(Scrollable).first,
   );
+  await tester.ensureVisible(finder);
+  await tester.pumpAndSettle();
   await tester.ensureVisible(finder);
   await tester.pumpAndSettle();
 }
@@ -263,8 +265,18 @@ void main() {
               ? "Use a country's menu to set a Quick Flag."
               : 'Usa el menú de un país para fijar una bandera rápida.',
         );
+        expect(
+          tester
+              .widget<PopupMenuButton<ThemePreference>>(
+                find.descendant(
+                  of: find.byKey(const ValueKey('theme-menu')),
+                  matching: find.byType(PopupMenuButton<ThemePreference>),
+                ),
+              )
+              .tooltip,
+          startsWith(l10n.theme),
+        );
         for (final label in [
-          l10n.switchToDarkMode,
           l10n.language,
           l10n.countryActions(item.displayName(locale)),
         ]) {

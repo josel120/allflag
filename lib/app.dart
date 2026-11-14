@@ -7,25 +7,56 @@ import 'ui/home_screen.dart';
 import 'ui/brand_theme.dart';
 import 'l10n/generated/app_localizations.dart';
 import 'platform/flag_mode_platform.dart';
+import 'privacy_policy.dart' as privacy;
+import 'support/support_ad_service.dart';
+import 'support/supporter_store.dart';
+
+/// Reads saved choices before the first frame so the app opens directly in the
+/// saved theme and language. Never blocks startup on storage problems: the home
+/// screen loads again and shows its own error and retry.
+Future<FlagPreferences?> loadInitialPreferences(
+  FlagPreferencesStore store, {
+  Duration timeout = const Duration(seconds: 2),
+}) async {
+  try {
+    return await store.load().timeout(timeout);
+  } catch (_) {
+    return null;
+  }
+}
 
 class AllFlagApp extends StatefulWidget {
   const AllFlagApp({
     super.key,
     required this.repository,
     required this.preferencesStore,
+    this.initialPreferences,
     this.flagModePlatform = const NativeFlagModePlatform(),
+    this.adServiceFactory,
+    this.supporterStore,
+    this.privacyPolicyUrl = privacy.privacyPolicyUrl,
+    this.openUrl = privacy.openExternalUrl,
   });
   final FlagCatalog repository;
   final FlagPreferencesStore preferencesStore;
+
+  /// Saved choices read before `runApp`; null falls back to System.
+  final FlagPreferences? initialPreferences;
   final FlagModePlatform flagModePlatform;
+  final SupportAdService Function()? adServiceFactory;
+  final SupporterStore? supporterStore;
+  final String privacyPolicyUrl;
+  final Future<bool> Function(Uri) openUrl;
 
   @override
   State<AllFlagApp> createState() => _AllFlagAppState();
 }
 
 class _AllFlagAppState extends State<AllFlagApp> {
-  ThemePreference _theme = ThemePreference.system;
-  LanguagePreference _language = LanguagePreference.system;
+  late ThemePreference _theme =
+      widget.initialPreferences?.theme ?? ThemePreference.system;
+  late LanguagePreference _language =
+      widget.initialPreferences?.language ?? LanguagePreference.system;
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -47,10 +78,19 @@ class _AllFlagAppState extends State<AllFlagApp> {
       ThemePreference.light => ThemeMode.light,
       ThemePreference.dark => ThemeMode.dark,
     },
+    themeAnimationDuration: AllFlagMotion.duration(
+      context,
+      AllFlagMotion.quick,
+    ),
+    themeAnimationCurve: AllFlagMotion.curve,
     home: HomeScreen(
       repository: widget.repository,
       preferencesStore: widget.preferencesStore,
       flagModePlatform: widget.flagModePlatform,
+      adServiceFactory: widget.adServiceFactory,
+      supporterStore: widget.supporterStore,
+      privacyPolicyUrl: widget.privacyPolicyUrl,
+      openUrl: widget.openUrl,
       onLanguageChanged: (language) {
         if (mounted && _language != language) {
           setState(() => _language = language);
